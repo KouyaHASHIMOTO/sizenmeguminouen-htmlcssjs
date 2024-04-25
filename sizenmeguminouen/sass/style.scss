@@ -8,12 +8,15 @@
 @use "layout/main";
 
 // Object - Component
+@use "object/component/text";
 @use "object/component/btn";
 @use "object/component/inner";
+@use "object/component/line";
 
 // Object - Project
 @use "object/project/about";
 @use "object/project/top";
+@use "object/project/faq";
 
 // Object - Utility
 @use "object/utility/color";

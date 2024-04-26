@@ -8,10 +8,9 @@
 @use "layout/main";
 
 // Object - Component
-@use "object/component/text";
+@use "object/component/title";
 @use "object/component/btn";
 @use "object/component/inner";
-@use "object/component/line";
 
 // Object - Project
 @use "object/project/about";

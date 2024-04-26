@@ -1,10 +1,21 @@
+@use "../../Foundation/variables";
+
 .p-faq {
+  padding-top: 78px;
+  padding-bottom: 77px;
 }
 
 .p-faq__wrapper {
 }
 
 .p-faq__title {
+  margin: 0 auto;
+  width: 330px;
+  text-align: center;
+}
+
+.p-faq__title-text {
+  width: 330px;
 }
 
 .p-faq__line {
@@ -13,16 +24,75 @@
 }
 
 .p-faq__accordion {
+  width: 960px;
+  margin: 0 auto;
+
+  li {
+    margin: 50px 0;
+  }
 }
 
 .p-faq__element {
+  padding: 25px 40px;
+  background-color: #ffffff;
+  border: 3px solid variables.$main-color;
+  border-radius: 50px;
 }
 
 .p-faq__question {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  //+マークの位置基準とするためにposition: relativeを指定
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  p {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+//アコ
+.p-faq__question::before,
+.p-faq__question::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: variables.$main-color;
+}
+
+.p-faq__question::before {
+  top: 45%;
+  right: 20px;
+  transform: rotate(0deg);
+}
+
+.p-faq__question::after {
+  top: 45%;
+  right: 20px;
+  transform: rotate(90deg);
+}
+
+.p-faq__answer {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 26px;
+  p {
+    font-size: 20px;
+  }
 }
 
 .p-faq__q {
+  color: variables.$main-color;
+  font-size: 35px;
 }
 
 .p-fag__a {
+  color: variables.$accent-color;
+  font-size: 35px;
 }

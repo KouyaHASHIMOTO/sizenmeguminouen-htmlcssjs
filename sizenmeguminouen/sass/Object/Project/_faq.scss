@@ -55,7 +55,7 @@
   }
 }
 
-//アコ
+//アコーディオンのデフォルトマークのスタイル
 .p-faq__question::before,
 .p-faq__question::after {
   position: absolute;
@@ -65,26 +65,36 @@
   background-color: variables.$main-color;
 }
 
+//デフォルトのマークの回転角度を指定
 .p-faq__question::before {
   top: 45%;
   right: 20px;
   transform: rotate(0deg);
 }
-
 .p-faq__question::after {
   top: 45%;
   right: 20px;
   transform: rotate(90deg);
 }
 
+//closeクラスが付与されたときのマークのスタイル
+.p-faq__question.close::before {
+  transform: rotate(90deg);
+}
+
 .p-faq__answer {
-  display: flex;
+  display: none;
+
   align-items: center;
   gap: 23px;
   margin-top: 26px;
   p {
     font-size: 20px;
   }
+}
+
+.p-faq__answer.close {
+  display: flex;
 }
 
 .p-faq__q {

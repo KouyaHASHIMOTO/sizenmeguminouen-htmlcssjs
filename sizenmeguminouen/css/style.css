@@ -88,7 +88,6 @@ h2 {
 }
 
 body {
-  font-family: "Archivo Narrow", sans-serif;
   color: #555555;
   background-color: #f9f9f9;
 }
@@ -184,10 +183,13 @@ body {
           transform: rotate(90deg);
 }
 
+.p-faq__question.close::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .p-faq__answer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -196,6 +198,12 @@ body {
 }
 .p-faq__answer p {
   font-size: 20px;
+}
+
+.p-faq__answer.close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .p-faq__q {

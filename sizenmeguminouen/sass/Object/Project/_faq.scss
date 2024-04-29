@@ -24,7 +24,7 @@
 }
 
 .p-faq__accordion {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 
   li {
@@ -33,10 +33,68 @@
 }
 
 .p-faq__element {
-  padding: 25px 40px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 40px;
   background-color: #ffffff;
   border: 3px solid variables.$main-color;
   border-radius: 50px;
+  position: relative;
+}
+
+//枠線に白いブロックを追加
+.p-faq__element::before {
+  position: absolute;
+  content: " ";
+  top: 50%; /* 50% で親要素の中央に配置 */
+  transform: translateY(
+    -50%
+  ); /* 要素の高さの半分だけ上に移動し、完全に中央に配置 */
+  left: -3px;
+  width: 4px;
+  height: 15px;
+  background-color: #ffffff;
+}
+.p-faq__element::after {
+  position: absolute;
+  content: " ";
+  top: 50%; /* 50% で親要素の中央に配置 */
+  transform: translateY(
+    -50%
+  ); /* 要素の高さの半分だけ上に移動し、完全に中央に配置 */
+  right: -3px;
+  width: 4px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+//アコーディオンを開いた時の白いブロックのスタイル
+.p-faq__element.scaleUp::before {
+  position: absolute;
+  content: " ";
+  top: 50%; /* 50% で親要素の中央に配置 */
+  transition: all 0.5s ease-in-out;
+  transform: translateY(
+    -50%
+  ); /* 要素の高さの半分だけ上に移動し、完全に中央に配置 */
+  left: -3px;
+  width: 3px;
+  height: 50px;
+  background-color: #ffffff;
+}
+.p-faq__element.scaleUp::after {
+  position: absolute;
+  content: " ";
+  top: 50%; /* 50% で親要素の中央に配置 */
+  transition: all 0.5s ease-in-out;
+
+  transform: translateY(
+    -50%
+  ); /* 要素の高さの半分だけ上に移動し、完全に中央に配置 */
+  right: -3px;
+  width: 3px;
+  height: 50px;
+  background-color: #ffffff;
 }
 
 .p-faq__question {
@@ -47,7 +105,6 @@
   //+マークの位置基準とするためにposition: relativeを指定
   position: relative;
   cursor: pointer;
-  transition: all 0.5s ease;
 
   p {
     font-weight: bold;
@@ -68,41 +125,54 @@
 //デフォルトのマークの回転角度を指定
 .p-faq__question::before {
   top: 45%;
-  right: 20px;
+  right: 40px;
   transform: rotate(0deg);
 }
 .p-faq__question::after {
   top: 45%;
-  right: 20px;
+  right: 40px;
   transform: rotate(90deg);
 }
 
 //closeクラスが付与されたときのマークのスタイル
-.p-faq__question.close::before {
-  transform: rotate(90deg);
+.p-faq__question.close::after {
+  transform: rotate(0deg);
 }
 
 .p-faq__answer {
+  position: relative;
+  padding-left: 46px;
+  padding-bottom: 10px;
   display: none;
-
   align-items: center;
-  gap: 23px;
   margin-top: 26px;
+  gap: 23px;
+  // transition: all 2s ease;
+
   p {
+    max-width: 820px;
     font-size: 20px;
+    font-weight: 500;
   }
 }
 
-.p-faq__answer.close {
-  display: flex;
+.p-faq__answer::before {
+  position: absolute;
+  content: "A";
+  top: 3px;
+  left: 0;
+  font-size: 35px;
+  color: variables.$accent-color;
 }
 
 .p-faq__q {
   color: variables.$main-color;
   font-size: 35px;
+  font-family: variables.$font-family;
 }
 
-.p-fag__a {
+.p-faq__a {
   color: variables.$accent-color;
   font-size: 35px;
+  font-family: variables.$font-family;
 }

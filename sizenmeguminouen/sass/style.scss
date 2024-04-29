@@ -1,6 +1,7 @@
 // Foundation
 @use "foundation/reset";
 @use "foundation/base";
+@use "foundation/mixin";
 
 // Layout
 @use "layout/header";
@@ -13,6 +14,7 @@
 @use "object/component/inner";
 
 // Object - Project
+@use "object/project/first-view";
 @use "object/project/about";
 @use "object/project/top";
 @use "object/project/faq";
@@ -20,3 +22,4 @@
 // Object - Utility
 @use "object/utility/color";
 @use "object/utility/font";
+@use "object/utility/flex";

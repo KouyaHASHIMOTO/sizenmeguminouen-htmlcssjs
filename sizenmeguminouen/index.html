@@ -34,8 +34,8 @@
           </div>
 
           <!-- PC画面のナビゲーション -->
-          <nav class="l-header__nav">
-            <ul class="l-header__nav-list">
+          <nav class="l-header__nav u-flex">
+            <ul class="l-header__nav-list u-flex">
               <li class="l-header__nav-item">
                 <a href="#about" class="l-header__nav-link">私たちについて</a>
               </li>
@@ -62,41 +62,48 @@
         </div>
       </header>
       <!-- ハンバーガーコンテンツ -->
-      <div class="p-hamburger-nav__content">
-        <nav class="p-hamburger-nav__menu">
-          <ul class="p-hamburger-nav__list">
-            <li class="p-hamburger-nav__item">
-              <a href="#top" class="p-hamburger-nav__link">
-                <div class="p-hamburger-nav__link-content">p.</div>
+      <div class="p-hamburger">
+        <nav class="p-hamburger__menu">
+          <ul class="p-hamburger__list">
+            <li class="p-hamburger__item">
+              <a href="#top" class="p-hamburger__link">
+                <div class="p-hamburger__content">
+                  <div class="p-hamburger__text">
+                    <p class="p-hamburger__main-text"></p>
+                    <p class="p-hamburger__sub-text"></p>
+                  </div>
+                </div>
               </a>
             </li>
-            <li class="p-hamburger-nav__item">
-              <a href="#about" class="p-hamburger-nav__link">私たちについて</a>
+            <li class="p-hamburger__item">
+              <a href="#about" class="p-hamburger__link">私たちについて</a>
             </li>
-            <li class="p-hamburger-nav__item">
-              <a href="#faq" class="p-hamburger-nav__link">よくあるご質問</a>
+            <li class="p-hamburger__item">
+              <a href="#faq" class="p-hamburger__link">よくあるご質問</a>
             </li>
-            <li class="p-hamburger-nav__item">
-              <a href="#works" class="p-hamburger-nav__link">活動紹介</a>
+            <li class="p-hamburger__item">
+              <a href="#works" class="p-hamburger__link">活動紹介</a>
             </li>
-            <li class="p-hamburger-nav__item">
-              <a href="#news" class="p-hamburger-nav__link">お知らせ</a>
+            <li class="p-hamburger__item">
+              <a href="#news" class="p-hamburger__link">お知らせ</a>
             </li>
-            <li class="p-hamburger-nav__item">
-              <a href="#access" class="p-hamburger-nav__link">アクセス</a>
+            <li class="p-hamburger__item">
+              <a href="#access" class="p-hamburger__link">アクセス</a>
             </li>
           </ul>
-          <div class="p-hamburger-nav__number">
+          <div class="p-hamburger__contact">
             <p>
               問い合わせ電話<br />
-              <span class="p-hamburger-nav__number--big">123-4567-8910</span>
+              <span class="p-hamburger__contact-number--big"
+                >123-4567-8910</span
+              >
             </p>
           </div>
-          <div class="p-hamburger-nav__reception">
+          <div class="p-hamburger__hours">
             <p>【受付時間】 <br />10:00 ~ 18:00（土日祝を除く）</p>
           </div>
           <a href="">
-            <div class="p-hamburger-nav__button">
+            <div class="p-hamburger__button">
               <p>お問い合わせ</p>
             </div>
           </a>
@@ -121,7 +128,7 @@
           <ul class="p-faq__accordion">
             <li>
               <section class="p-faq__element">
-                <h3 class="p-faq__question">
+                <h3 class="p-faq__question u-flex">
                   <span class="p-faq__q">Q</span>
                   <p>農園で提供される季節ごとの野菜や果物の品種は何ですか？</p>
                 </h3>

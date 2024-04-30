@@ -20,9 +20,6 @@
 
 .l-header__wrapper {
   @include mixin.mq("pc") {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding-left: 40px;
     padding-right: 30px;
   }
@@ -49,14 +46,11 @@
 .l-header__nav {
   display: none;
   @include mixin.mq("pc") {
-    display: flex;
-    align-items: center;
     gap: 21px;
   }
 }
 
 .l-header__nav-list {
-  display: flex;
   gap: 20px;
 }
 

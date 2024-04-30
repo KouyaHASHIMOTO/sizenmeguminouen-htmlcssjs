@@ -104,7 +104,8 @@ img {
   height: 50px;
   position: fixed;
   background-color: #ffffff;
-  padding: 10px 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media screen and (min-width: 960px) {
   .l-header {
@@ -121,6 +122,10 @@ img {
   }
 }
 
+.l-header__wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @media screen and (min-width: 960px) {
   .l-header__wrapper {
     padding-left: 40px;
@@ -142,6 +147,12 @@ img {
 }
 @media screen and (min-width: 960px) {
   .l-header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 21px;
   }
 }
@@ -166,6 +177,24 @@ img {
 .l-header__button p {
   font-weight: bold;
   color: #ffffff;
+}
+
+.l-hamburger-content {
+  background-color: #f9f9f9;
+}
+
+.l-hamburger-content__link {
+  padding: 20px 15px;
+  border-bottom: 1px solid #93c572;
+}
+
+.l-hamburger-content__group {
+  gap: 10px;
+}
+
+.l-hamburger-content__title {
+  color: #3b4043;
+  font-weight: bold;
 }
 
 .c-title-text {

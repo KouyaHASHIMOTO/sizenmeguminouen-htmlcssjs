@@ -135,6 +135,7 @@
 //closeクラスが付与されたときのマークのスタイル
 .p-faq__question.close::after {
   transform: rotate(0deg);
+  transition: transform 0.5s;
 }
 
 .p-faq__answer {
@@ -145,7 +146,6 @@
   align-items: center;
   margin-top: 26px;
   gap: 23px;
-  transition: all 2s ease;
   height: 60px;
 
   p {

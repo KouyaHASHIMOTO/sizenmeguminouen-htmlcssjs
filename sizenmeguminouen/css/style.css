@@ -402,6 +402,10 @@ img {
 .p-faq__question.close::after {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .p-faq__answer {
@@ -414,8 +418,6 @@ img {
           align-items: center;
   margin-top: 26px;
   gap: 23px;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
   height: 60px;
 }
 .p-faq__answer p {

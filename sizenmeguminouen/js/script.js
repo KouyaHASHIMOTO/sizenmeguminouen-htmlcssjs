@@ -1,13 +1,13 @@
 //アコーディオンをクリックした時の動作
 
-//タイトル要素をクリックしたら
+//質問要素をクリックしたら
 $(".p-faq__question").on("click", function () {
   $(".p-faq__answer").slideUp(500); //クラス名.p-faq__answerがついたすべてのアコーディオンを閉じる
 
   var findAnswer = $(this).next(".p-faq__answer"); //直後のアコーディオンを行うエリアを取得し
   var findElement = $(this).closest(".p-faq__element"); //クリックしたタイトル要素に一番近い親要素の.p-faq__elementを取得
 
-  //アコーディオンの白い枠線部分のスライドアニメーション
+  //アコーディオンの開閉時の動作
   if ($(findElement).hasClass("scaleUp")) {
     //タイトル要素にクラス名scaleUpがあれば
     $(findElement).removeClass("scaleUp"); //クラス名を除去
@@ -18,7 +18,7 @@ $(".p-faq__question").on("click", function () {
     $(findElement).slideDown(500); //アコーディオンを開く
   }
 
-  //
+  //アコーディオン＋－ボタン
   if ($(this).hasClass("close")) {
     //タイトル要素にクラス名closeがあれば
     $(this).removeClass("close"); //クラス名を除去

@@ -1,9 +1,9 @@
-@use "variables";
+@use "../../global/variables" as *;
 
 body {
   font-size: 16px;
-  color: variables.$text-color;
-  background-color: variables.$bg-color;
+  color: $text-color;
+  background-color: $bg-color;
 }
 
 img {

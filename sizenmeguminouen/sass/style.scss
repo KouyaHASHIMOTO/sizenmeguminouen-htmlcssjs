@@ -6,20 +6,19 @@
 // Layout
 @use "layout/header";
 @use "layout/footer";
-@use "layout/main";
 
 // Object - Component
-@use "object/component/title";
-@use "object/component/btn";
-@use "object/component/inner";
+@use "component/title";
+@use "component/btn";
+@use "component/inner";
 
 // Object - Project
-@use "object/project/first-view";
-@use "object/project/about";
-@use "object/project/top";
-@use "object/project/faq";
+@use "project/first-view";
+@use "project/about";
+@use "project/faq";
+@use "project/service";
 
 // Object - Utility
-@use "object/utility/color";
-@use "object/utility/font";
-@use "object/utility/flex";
+@use "utility/color";
+@use "utility/font";
+@use "utility/flex";

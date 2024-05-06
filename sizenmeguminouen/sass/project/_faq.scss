@@ -1,4 +1,4 @@
-@use "../../Foundation/variables";
+@use "../../global/variables" as *;
 
 .p-faq {
   padding-top: 78px;
@@ -37,7 +37,7 @@
   padding-bottom: 11px;
   padding-left: 40px;
   background-color: #ffffff;
-  border: 3px solid variables.$main-color;
+  border: 3px solid $main-color;
   border-radius: 50px;
   position: relative;
 }
@@ -117,7 +117,7 @@
   content: "";
   width: 20px;
   height: 3px;
-  background-color: variables.$main-color;
+  background-color: $main-color;
 }
 
 //デフォルトのマークの回転角度を指定
@@ -161,17 +161,17 @@
   top: 3px;
   left: 0;
   font-size: 35px;
-  color: variables.$accent-color;
+  color: $accent-color;
 }
 
 .p-faq__q {
-  color: variables.$main-color;
+  color: $main-color;
   font-size: 35px;
-  font-family: variables.$font-family;
+  font-family: $font-family;
 }
 
 .p-faq__a {
-  color: variables.$accent-color;
+  color: $accent-color;
   font-size: 35px;
-  font-family: variables.$font-family;
+  font-family: $font-family;
 }

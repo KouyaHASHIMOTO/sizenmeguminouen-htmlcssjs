@@ -180,6 +180,7 @@ img {
 }
 
 .l-hamburger-content {
+  display: none;
   height: calc(100vh - 50px);
   background-color: #f9f9f9;
 }
@@ -245,7 +246,7 @@ img {
   color: #ffffff;
 }
 
-.c-title-text {
+.c-title {
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 4px;
@@ -445,6 +446,118 @@ img {
   color: #f7b560;
   font-size: 35px;
   font-family: "Archivo Narrow", sans-serif;
+}
+
+.p-activity {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.p-activity__wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.p-activity__title-text {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #555555;
+}
+
+.p-activity__line {
+  height: 10px;
+}
+
+.p-activity__tab {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-activity__tab-btn {
+  color: #f7b560;
+  background-color: #ffffff;
+}
+.p-activity__tab-btn a {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 10px;
+  background-color: white;
+  font-size: 16px;
+  padding: 17px 39px;
+  font-weight: bold;
+}
+
+.p-activity__tab-btn-unique a {
+  font-size: 14px;
+  padding: 18px 6px;
+}
+
+/*タブのコンテンツの表示非表示と形状*/
+.p-activity__tab-content {
+  margin-top: 40px;
+  display: none; /*はじめは非表示*/
+  opacity: 0; /*透過0*/
+  background: #fff;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.p-activity__tab-content.is-active {
+  display: block; /*表示*/
+  -webkit-animation-name: displayAnime;
+          animation-name: displayAnime; /*ふわっと表示させるためのアニメーション*/
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.p-activity__tab-content-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: 40px;
+  overflow-x: auto; /* コンテンツがはみ出る場合にスクロールバーを表示 */
+  min-width: 100vw; /* 最小幅をビューポートの100%に設定 */
+  gap: 24px;
+}
+.p-activity__tab-content-slider img {
+  min-width: 250px;
+  min-height: 210px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.p-activity__tab li.is-active a {
+  background: #93c572;
+  color: #ffffff;
 }
 
 .u-flex {

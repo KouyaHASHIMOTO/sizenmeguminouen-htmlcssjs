@@ -1,6 +1,5 @@
 @use "../Foundation/mixin";
-@use "../Foundation/variables";
-
+@use "../../global/variables" as *;
 .l-header {
   width: 100%;
   position: fixed;
@@ -84,8 +83,9 @@
 }
 
 .l-hamburger-content {
+  display: none;
   height: calc(100vh - 50px);
-  background-color: variables.$bg-color;
+  background-color: $bg-color;
 
   @include mixin.mq("pc") {
     display: none;
@@ -109,7 +109,7 @@
 .l-hamburger-content__link {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid variables.$main-color;
+  border-bottom: 1px solid $main-color;
 }
 
 .l-hamburger-content__box {
@@ -127,7 +127,7 @@
 .l-hamburger-content__subtitle {
   color: #f7b560;
   font-size: 12px;
-  font-family: variables.$font-family;
+  font-family: $font-family;
 }
 
 .l-hamburger-content__arrow {
@@ -135,7 +135,7 @@
 
 .l-hamburger-content__contact {
   margin-top: 20px;
-  color: variables.$main-color;
+  color: $main-color;
 
   text-align: center;
 

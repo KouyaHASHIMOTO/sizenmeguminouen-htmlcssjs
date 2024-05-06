@@ -1,0 +1,98 @@
+@use "../../global/variables" as *;
+
+.p-activity {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.p-activity__wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.p-activity__title {
+}
+
+.p-activity__title-text {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: $text-color;
+}
+
+.p-activity__line {
+  height: 10px;
+}
+
+.p-activity__tab {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+}
+
+.p-activity__tab-btn {
+  color: #f7b560;
+  background-color: #ffffff;
+  a {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    padding: 17px 39px;
+    font-weight: bold;
+  }
+}
+
+.p-activity__tab-btn-unique {
+  a {
+    font-size: 14px;
+    padding: 18px 6px;
+  }
+}
+
+/*タブのコンテンツの表示非表示と形状*/
+.p-activity__tab-content {
+  margin-top: 40px;
+  display: none; /*はじめは非表示*/
+  opacity: 0; /*透過0*/
+  background: #fff;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.p-activity__tab-content.is-active {
+  display: block; /*表示*/
+  animation-name: displayAnime; /*ふわっと表示させるためのアニメーション*/
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.p-activity__tab-content-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+  overflow-x: auto; /* コンテンツがはみ出る場合にスクロールバーを表示 */
+  min-width: 100vw; /* 最小幅をビューポートの100%に設定 */
+  gap: 24px;
+
+  img {
+    min-width: 250px;
+    min-height: 210px;
+    flex-shrink: 0;
+  }
+}
+
+.p-activity__tab li.is-active a {
+  background: $main-color;
+  color: #ffffff;
+}

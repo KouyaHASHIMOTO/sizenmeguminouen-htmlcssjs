@@ -4,7 +4,6 @@
   width: 100%;
   position: fixed;
   background-color: #ffffff;
-  padding-top: 10px;
 
   @include mixin.mq("pc") {
     width: 95%;
@@ -19,9 +18,11 @@
 }
 
 .l-header__wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 10px;
+
   @include mixin.mq("pc") {
     padding-left: 40px;
     padding-right: 30px;
@@ -84,7 +85,7 @@
 
 .l-hamburger-content {
   display: none;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 44px);
   background-color: $bg-color;
 
   @include mixin.mq("pc") {

@@ -120,10 +120,8 @@ img {
 }
 
 .l-header__wrapper {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media screen and (min-width: 960px) {
   .l-header__wrapper {
@@ -131,6 +129,68 @@ img {
     padding-right: 30px;
     padding-bottom: 0;
   }
+}
+
+.l-header__sp {
+  width: 100%;
+}
+
+.l-header__hamburger-menu {
+  position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+  background: #fff;
+  cursor: pointer;
+  width: 40px;
+  height: 50px;
+  border-radius: 5px;
+}
+.l-header__hamburger-menu span {
+  display: inline-block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; /*アニメーションの設定*/
+  position: absolute;
+  right: 0;
+  height: 2px;
+  border-radius: 5px;
+  background: #93c572;
+  width: 20px;
+}
+.l-header__hamburger-menu span:nth-of-type(1) {
+  top: 13px;
+}
+.l-header__hamburger-menu span:nth-of-type(2) {
+  top: 20px;
+}
+.l-header__hamburger-menu span:nth-of-type(2)::after {
+  content: "Menu"; /*3つ目の要素のafterにMenu表示を指定*/
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  color: #93c572;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.l-header__hamburger-menu.is-active span:nth-of-type(1) {
+  top: 12px;
+  right: 0;
+  -webkit-transform: translateY(6px) rotate(-35deg);
+          transform: translateY(6px) rotate(-35deg);
+  width: 50%;
+}
+.l-header__hamburger-menu.is-active span:nth-of-type(2) {
+  top: 24px;
+  right: 0px;
+  -webkit-transform: translateY(-6px) rotate(35deg);
+          transform: translateY(-6px) rotate(35deg);
+  width: 50%;
+}
+.l-header__hamburger-menu.is-active span:nth-of-type(2)::after {
+  content: "Close"; /*3つ目の要素のafterにClose表示を指定*/
+  -webkit-transform: translateY(0) rotate(-36deg);
+          transform: translateY(0) rotate(-36deg);
+  top: 5px;
+  left: 4px;
 }
 
 .l-header__logo-link img {
@@ -180,14 +240,21 @@ img {
 }
 
 .l-hamburger-content {
-  display: none;
-  height: calc(100vh - 44px);
-  background-color: #f9f9f9;
+  opacity: 0;
+  height: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 @media screen and (min-width: 960px) {
   .l-hamburger-content {
     display: none;
   }
+}
+
+.l-hamburger-content.is-active {
+  opacity: 1;
+  height: calc(100vh - 44px);
+  background-color: #f9f9f9;
 }
 
 .l-hamburger-content__wrapper {

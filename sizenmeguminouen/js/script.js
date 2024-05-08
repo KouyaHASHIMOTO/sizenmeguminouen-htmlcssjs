@@ -112,3 +112,10 @@ $(".p-activity__tab-content-slider").slick({
   //   },
   // ],
 });
+
+//ハンバーガーメニュー
+
+$(".l-header__hamburger-menu").click(function () {
+  $(this).toggleClass("is-active");
+  $(".l-hamburger-content").toggleClass("is-active");
+});

@@ -18,10 +18,8 @@
 }
 
 .l-header__wrapper {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @include mixin.mq("pc") {
     padding-left: 40px;
@@ -30,7 +28,75 @@
   }
 }
 
+.l-header__sp {
+  width: 100%;
+}
+
 .l-header__logo {
+}
+
+.l-header__logo-img {
+}
+
+// ハンバーガーメニューのスタイル
+.l-header__hamburger-menu {
+  position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+  background: #fff;
+  cursor: pointer;
+  width: 40px;
+  height: 50px;
+  border-radius: 5px;
+
+  span {
+    display: inline-block;
+    transition: all 0.4s; /*アニメーションの設定*/
+    position: absolute;
+    right: 0;
+    height: 2px;
+    border-radius: 5px;
+    background: $main-color;
+    width: 20px;
+
+    &:nth-of-type(1) {
+      top: 13px;
+    }
+
+    &:nth-of-type(2) {
+      top: 20px;
+    }
+
+    &:nth-of-type(2)::after {
+      content: "Menu"; /*3つ目の要素のafterにMenu表示を指定*/
+      position: absolute;
+      top: 5px;
+      left: -2px;
+      color: $main-color;
+      font-size: 10px;
+      text-transform: uppercase;
+      font-family: $font-family;
+    }
+  }
+}
+
+.l-header__hamburger-menu.is-active {
+  span:nth-of-type(1) {
+    top: 12px;
+    right: 0;
+    transform: translateY(6px) rotate(-35deg);
+    width: 50%;
+  }
+  span:nth-of-type(2) {
+    top: 24px;
+    right: 0px;
+    transform: translateY(-6px) rotate(35deg);
+    width: 50%;
+  }
+  span:nth-of-type(2)::after {
+    content: "Close"; /*3つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-36deg);
+    top: 5px;
+    left: 4px;
+  }
 }
 
 .l-header__logo-link {
@@ -84,13 +150,19 @@
 }
 
 .l-hamburger-content {
-  display: none;
-  height: calc(100vh - 44px);
-  background-color: $bg-color;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease-in-out;
 
   @include mixin.mq("pc") {
     display: none;
   }
+}
+
+.l-hamburger-content.is-active {
+  opacity: 1;
+  height: calc(100vh - 44px);
+  background-color: $bg-color;
 }
 
 .l-hamburger-content__wrapper {

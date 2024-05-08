@@ -152,7 +152,7 @@
 .l-hamburger-content {
   opacity: 0;
   height: 0;
-  transition: all 0.5s ease-in-out;
+  background-color: $bg-color;
 
   @include mixin.mq("pc") {
     display: none;
@@ -162,7 +162,6 @@
 .l-hamburger-content.is-active {
   opacity: 1;
   height: calc(100vh - 44px);
-  background-color: $bg-color;
 }
 
 .l-hamburger-content__wrapper {

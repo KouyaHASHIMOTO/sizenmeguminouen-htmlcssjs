@@ -242,8 +242,7 @@ img {
 .l-hamburger-content {
   opacity: 0;
   height: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  background-color: #f9f9f9;
 }
 @media screen and (min-width: 960px) {
   .l-hamburger-content {
@@ -254,7 +253,6 @@ img {
 .l-hamburger-content.is-active {
   opacity: 1;
   height: calc(100vh - 44px);
-  background-color: #f9f9f9;
 }
 
 .l-hamburger-content__wrapper {

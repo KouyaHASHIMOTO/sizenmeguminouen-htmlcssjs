@@ -118,4 +118,6 @@ $(".p-activity__tab-content-slider").slick({
 $(".l-header__hamburger-menu").click(function () {
   $(this).toggleClass("is-active");
   $(".l-hamburger-content").toggleClass("is-active");
+  //ハンバーガーメニューを開いたときにスクロールを無効にする
+  $("body").toggleClass("no_scroll");
 });

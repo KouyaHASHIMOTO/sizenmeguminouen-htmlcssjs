@@ -55,7 +55,7 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   vertical-align: middle;
 }
@@ -92,6 +92,11 @@ body {
   font-size: 16px;
   color: #555555;
   background-color: #f9f9f9;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+}
+
+body.no_scroll {
+  overflow: hidden;
 }
 
 img {
@@ -103,6 +108,7 @@ img {
   width: 100%;
   position: fixed;
   background-color: #ffffff;
+  z-index: 9999;
 }
 @media screen and (min-width: 960px) {
   .l-header {
@@ -243,6 +249,7 @@ img {
   opacity: 0;
   height: 0;
   background-color: #f9f9f9;
+  pointer-events: none;
 }
 @media screen and (min-width: 960px) {
   .l-hamburger-content {
@@ -252,7 +259,9 @@ img {
 
 .l-hamburger-content.is-active {
   opacity: 1;
-  height: calc(100vh - 44px);
+  height: calc(100vh - 50px);
+  pointer-events: auto;
+  top: 0;
 }
 
 .l-hamburger-content__wrapper {
@@ -326,20 +335,130 @@ img {
   margin-top: -5px;
 }
 
-.p-first-view__wrapper {
-  padding-top: 270px;
+.p-first-view {
+  height: 600px;
   background-image: url("../images/FV.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
-.p-first-view__logo {
-  text-align: center;
+.p-first-view__wrapper {
+  padding-top: 300px;
+  padding-right: 14px;
+  padding-left: 28px;
 }
+
+.p-first-view__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .p-first-view__logo img {
-  width: 203px;
+  width: 72px;
+  height: 56px;
+}
+
+.p-first-view__title {
+  min-width: 259px;
+  color: #93c572;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 3.75px;
+}
+
+/*=== 9-1-4 矢印が動いてスクロールを促す  ====*/
+/*スクロールダウン全体の場所*/
+.p-first-view__scrolldown {
+  opacity: 0;
+}
+@media screen and (min-width: 960px) {
+  .p-first-view__scrolldown {
+    opacity: 1;
+    /*描画位置※位置は適宜調整してください*/
+    position: relative;
+    bottom: 1%;
+    right: 50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+    -webkit-animation: arrowmove 1s ease-in-out infinite;
+            animation: arrowmove 1s ease-in-out infinite;
+    z-index: 9998;
+  }
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@-webkit-keyframes arrowmove {
+  0% {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
+@keyframes arrowmove {
+  0% {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
+/*Scrollテキストの描写*/
+.p-first-view__scrolldown span {
+  /*描画位置*/
+  position: absolute;
+  left: -20px;
+  bottom: 10px;
+  /*テキストの形状*/
+  color: #fff;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.p-first-view__scrolldown:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  /*矢印の形状*/
+  width: 1px;
+  height: 20px;
+  background: #fff;
+  -webkit-transform: skewX(-31deg);
+          transform: skewX(-31deg);
+}
+
+.p-first-view__scrolldown:after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /*矢印の形状*/
+  width: 1px;
+  height: 50px;
+  background: #fff;
 }
 
 .p-faq__wrapper {
@@ -616,10 +735,7 @@ img {
   margin-top: 40px;
 }
 .p-activity__tab-content-slider img {
-  width: 250px;
   height: auto;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 
 .p-activity__tab li.is-active a {

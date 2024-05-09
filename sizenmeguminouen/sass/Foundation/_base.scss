@@ -4,6 +4,11 @@ body {
   font-size: 16px;
   color: $text-color;
   background-color: $bg-color;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+}
+
+body.no_scroll {
+  overflow: hidden;
 }
 
 img {

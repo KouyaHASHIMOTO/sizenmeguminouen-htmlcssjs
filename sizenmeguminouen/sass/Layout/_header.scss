@@ -4,6 +4,7 @@
   width: 100%;
   position: fixed;
   background-color: #ffffff;
+  z-index: 9999;
 
   @include mixin.mq("pc") {
     width: 95%;
@@ -153,6 +154,7 @@
   opacity: 0;
   height: 0;
   background-color: $bg-color;
+  pointer-events: none;
 
   @include mixin.mq("pc") {
     display: none;
@@ -161,7 +163,9 @@
 
 .l-hamburger-content.is-active {
   opacity: 1;
-  height: calc(100vh - 44px);
+  height: calc(100vh - 50px);
+  pointer-events: auto;
+  top: 0;
 }
 
 .l-hamburger-content__wrapper {

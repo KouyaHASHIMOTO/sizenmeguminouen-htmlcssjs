@@ -337,10 +337,23 @@ img {
 
 .p-first-view {
   height: 600px;
+  position: relative;
+}
+
+.p-first-view::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  /*背景画像設定*/
   background-image: url("../images/FV.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .p-first-view__wrapper {
@@ -350,6 +363,12 @@ img {
 }
 
 .p-first-view__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,13 +404,12 @@ img {
   .p-first-view__scrolldown {
     opacity: 1;
     /*描画位置※位置は適宜調整してください*/
-    position: relative;
+    position: absolute;
     bottom: 1%;
     right: 50%;
     /*矢印の動き1秒かけて永遠にループ*/
     -webkit-animation: arrowmove 1s ease-in-out infinite;
             animation: arrowmove 1s ease-in-out infinite;
-    z-index: 9998;
   }
 }
 
@@ -420,33 +438,36 @@ img {
 }
 /*Scrollテキストの描写*/
 .p-first-view__scrolldown span {
+  font-family: "Archivo Narrow", sans-serif;
+  letter-spacing: 1.4px;
   /*描画位置*/
   position: absolute;
-  left: -20px;
-  bottom: 10px;
+  left: -25px;
+  bottom: 55px;
   /*テキストの形状*/
   color: #fff;
-  font-size: 0.7rem;
-  letter-spacing: 0.05em;
-  /*縦書き設定*/
-  -ms-writing-mode: tb-rl;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 /* 矢印の描写 */
 .p-first-view__scrolldown:before {
-  content: "";
-  /*描画位置*/
-  position: absolute;
-  bottom: 0;
-  right: -6px;
-  /*矢印の形状*/
-  width: 1px;
-  height: 20px;
-  background: #fff;
-  -webkit-transform: skewX(-31deg);
-          transform: skewX(-31deg);
+  height: 0;
+}
+@media screen and (min-width: 960px) {
+  .p-first-view__scrolldown:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 2px;
+    height: 20px;
+    background: #fff;
+    -webkit-transform: skewX(-31deg);
+            transform: skewX(-31deg);
+  }
 }
 
 .p-first-view__scrolldown:after {
@@ -456,9 +477,13 @@ img {
   bottom: 0;
   right: 0;
   /*矢印の形状*/
-  width: 1px;
+  width: 2px;
   height: 50px;
   background: #fff;
+}
+
+.p-faq {
+  background-color: #f9f9f9;
 }
 
 .p-faq__wrapper {

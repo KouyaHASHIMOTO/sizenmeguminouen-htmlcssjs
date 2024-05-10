@@ -121,3 +121,18 @@ $(".l-header__hamburger-menu").click(function () {
   //ハンバーガーメニューを開いたときにスクロールを無効にする
   $("body").toggleClass("no_scroll");
 });
+
+//first-viewのnewsアニメーション
+
+$(window).scroll(function () {
+  $(".p-first-view__news").each(function () {
+    var elemPos = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > elemPos - windowHeight) {
+      $(this).addClass("active");
+    } else {
+      $(this).removeClass("active");
+    }
+  });
+});

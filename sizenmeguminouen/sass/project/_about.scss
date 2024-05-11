@@ -1,0 +1,68 @@
+@use "../../global/variables" as *;
+@use "../Foundation/mixin";
+
+.p-about {
+  background-color: $bg-color;
+  text-align: center;
+  position: relative;
+}
+
+.p-about__wrapper {
+  padding-top: 130px;
+  padding-bottom: 182px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.p-about__logo {
+  text-align: center;
+  width: 232px;
+}
+
+.p-about__logo-img {
+}
+
+.p-about__content {
+}
+
+.p-about__image {
+}
+
+.p-about__text {
+  margin-top: 30px;
+  p {
+    font-size: 16px;
+    font-weight: bold;
+
+    &:nth-child(4) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.p-about__img {
+  img:nth-child(1) {
+    position: absolute;
+    width: 63px;
+    top: 40px;
+    left: 34px;
+  }
+  img:nth-child(2) {
+    position: absolute;
+    width: 57px;
+    top: 50px;
+    right: 42px;
+  }
+  img:nth-child(3) {
+    position: absolute;
+    width: 86px;
+    left: 46px;
+    bottom: 67px;
+  }
+  img:nth-child(4) {
+    position: absolute;
+    width: 92px;
+    right: 47px;
+    bottom: 40px;
+  }
+}

@@ -126,13 +126,14 @@ $(".l-header__hamburger-menu").click(function () {
 
 $(window).scroll(function () {
   $(".p-first-view__news").each(function () {
-    var elemPos = $(this).offset().top;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
+    var scroll = $(window).scrollTop(); //スクロールをしたheightの数値
+    var elemPos = $(this).offset().top; //画面トップから指定した要素までのheight
+    var windowHeight = $(window).height(); //ブラウザのウィンドウのheightの数値;
     if (scroll > elemPos - windowHeight) {
-      $(this).addClass("active");
+      // if (scroll == 0) {
+      $(this).addClass("is-active");
     } else {
-      $(this).removeClass("active");
+      $(this).removeClass("is-active");
     }
   });
 });

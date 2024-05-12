@@ -73,6 +73,18 @@
   opacity: 0;
   position: absolute;
   bottom: 3.33%;
+  animation: 1s fadeout ease forwards;
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
 }
 
 .p-first-view__news.is-active {

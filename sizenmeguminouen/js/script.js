@@ -97,20 +97,20 @@ $(".p-activity__tab-content-slider").slick({
   cssEase: "linear", //動き方。初期値はeaseですが、スムースな動きで見せたいのでlinear
   slidesToShow: 3, //スライドを画面に4枚見せる
   slidesToScroll: 1, //1回のスライドで動かす要素数
-  // responsive: [
-  //   {
-  //     breakpoint: 769, //モニターの横幅が769px以下の見せ方
-  //     settings: {
-  //       slidesToShow: 2, //スライドを画面に2枚見せる
-  //     },
-  //   },
-  //   {
-  //     breakpoint: 426, //モニターの横幅が426px以下の見せ方
-  //     settings: {
-  //       slidesToShow: 1.5, //スライドを画面に1.5枚見せる
-  //     },
-  //   },
-  // ],
+  responsive: [
+    {
+      breakpoint: 769, //モニターの横幅が769px以下の見せ方
+      settings: {
+        slidesToShow: 2, //スライドを画面に2枚見せる
+      },
+    },
+    {
+      breakpoint: 426, //モニターの横幅が426px以下の見せ方
+      settings: {
+        slidesToShow: 1.5, //スライドを画面に1.5枚見せる
+      },
+    },
+  ],
 });
 
 //ハンバーガーメニュー

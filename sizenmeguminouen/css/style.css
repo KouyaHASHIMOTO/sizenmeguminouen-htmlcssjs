@@ -823,10 +823,12 @@ img {
 }
 
 .p-activity {
-  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1607843137);
-          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1607843137);
+  position: relative;
   background: #fff;
   padding-bottom: 50px;
+  -webkit-box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.1607843137);
+  z-index: 1;
 }
 
 .p-activity__wrapper {

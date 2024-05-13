@@ -664,13 +664,13 @@ img {
   padding-bottom: 77px;
 }
 
-.p-faq__title {
+.p-faq__heading {
   margin: 0 auto;
   width: 330px;
   text-align: center;
 }
 
-.p-faq__title-text {
+.p-faq__heading-text {
   width: 330px;
 }
 
@@ -846,7 +846,7 @@ img {
   padding-right: 15px;
 }
 
-.p-activity__title-text {
+.p-activity__heading-text {
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -951,7 +951,7 @@ img {
   position: relative;
 }
 
-.p-notice__container-block {
+.p-notice__heading-block {
   padding-left: 15px;
   padding-right: 16px;
 }
@@ -961,7 +961,8 @@ img {
 }
 
 .p-notice__line {
-  height: 10px;
+  height: 12px;
+  width: 129px;
 }
 
 .p-notice__description {
@@ -990,6 +991,10 @@ img {
   padding-left: 21px;
 }
 
+ul.p-notice__list > li:nth-child(n+2) {
+  margin-top: 30px;
+}
+
 .p-notice__content-block {
   gap: 27px;
 }
@@ -1013,6 +1018,35 @@ img {
 .p-notice__content-text {
   margin-top: 10px;
   font-weight: bold;
+}
+
+.p-access__wrapper {
+  padding-left: 15px;
+  padding-right: 16px;
+}
+
+.p-access__line {
+  height: 11px;
+}
+
+.p-access__card {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 139px 206px;
+  grid-template-rows: 350px 250px;
+  border-radius: 50px;
+}
+
+.p-access__item {
+  background-color: #93c572;
+}
+
+.p-access__info {
+  background-color: #fff;
+}
+
+.p-access__map {
+  grid-column: 1/4;
 }
 
 .u-flex {

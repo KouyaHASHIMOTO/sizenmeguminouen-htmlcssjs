@@ -1,0 +1,69 @@
+@use "../global/variables" as *;
+
+.p-access {
+}
+
+.p-access__wrapper {
+  padding-left: 15px;
+  padding-right: 16px;
+}
+
+.p-access__heading {
+}
+
+.p-access__heading-text {
+}
+
+.p-access__line {
+  height: 11px;
+}
+
+.c-line {
+}
+
+.p-access__card {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 139px 206px;
+  grid-template-rows: 350px 250px;
+  border-radius: 50px;
+}
+
+.p-access__item {
+  background-color: $main-color;
+}
+
+.p-access__item-company {
+}
+
+.p-access__item-access {
+}
+
+.p-access__item-phone {
+}
+
+.p-access__item-hour {
+}
+
+.p-access__item-map {
+}
+
+.p-access__info {
+  background-color: #fff;
+}
+
+.p-access__info-title {
+}
+
+.p-access__info-access {
+}
+
+.p-access__info-phone {
+}
+
+.p-access__info-hour {
+}
+
+.p-access__map {
+  grid-column: 1/4;
+}

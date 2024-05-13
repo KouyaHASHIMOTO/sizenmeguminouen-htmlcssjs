@@ -7,10 +7,10 @@
 .p-notice__wrapper {
 }
 
-.p-notice__container {
+.p-notice__heading {
 }
 
-.p-notice__container-block {
+.p-notice__heading-block {
   padding-left: 15px;
   padding-right: 16px;
 }
@@ -20,14 +20,12 @@
 }
 
 .p-notice__line {
-  height: 10px;
+  height: 12px;
+  width: 129px;
 }
 
 .p-notice__description {
   margin-top: 30px;
-}
-
-.c-description-text {
 }
 
 .p-notice__pc-view-more {
@@ -52,6 +50,10 @@
   right: 0px;
   padding-top: 30px;
   padding-left: 21px;
+}
+
+ul.p-notice__list > li:nth-child(n + 2) {
+  margin-top: 30px;
 }
 
 .p-notice__item {

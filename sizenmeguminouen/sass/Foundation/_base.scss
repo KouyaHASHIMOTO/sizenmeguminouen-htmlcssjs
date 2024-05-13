@@ -1,10 +1,12 @@
-@use "../../global/variables" as *;
+@use "../global/variables" as *;
 
 body {
   font-size: 16px;
   color: $text-color;
-  background-color: $bg-color;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
+}
+
+main {
 }
 
 body.no_scroll {
@@ -14,4 +16,10 @@ body.no_scroll {
 img {
   width: 100%;
   height: auto;
+}
+
+.scroll-container {
+  position: relative;
+  background-color: $bg-color;
+  z-index: 1;
 }

@@ -1,0 +1,86 @@
+@use "../global/variables" as *;
+
+.p-notice {
+  position: relative;
+}
+
+.p-notice__wrapper {
+}
+
+.p-notice__container {
+}
+
+.p-notice__container-block {
+  padding-left: 15px;
+  padding-right: 16px;
+}
+
+.p-notice__title-text {
+  font-size: 30px;
+}
+
+.p-notice__line {
+  height: 10px;
+}
+
+.p-notice__description {
+  margin-top: 30px;
+}
+
+.c-description-text {
+}
+
+.p-notice__pc-view-more {
+}
+
+.p-notice__sp-view-more {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 440px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+}
+
+.p-notice__list {
+  background-color: #fff;
+  width: 361px;
+  height: 381px;
+  box-shadow: 1px 1px 10px #00000029;
+  border-radius: 50px 0px 0px 50px;
+  position: absolute;
+  top: 173px;
+  right: 0px;
+  padding-top: 30px;
+  padding-left: 21px;
+}
+
+.p-notice__item {
+}
+
+.p-notice__content {
+}
+
+.p-notice__content-block {
+  gap: 27px;
+}
+
+.p-notice__content-time {
+  font-family: $font-family;
+  letter-spacing: 0.8px;
+}
+
+.p-notice__content-category {
+  text-align: center;
+  width: 96px;
+  height: 26px;
+  background-color: $main-color;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-top: 3px;
+  color: #fff;
+}
+
+.p-notice__content-text {
+  margin-top: 10px;
+  font-weight: bold;
+}

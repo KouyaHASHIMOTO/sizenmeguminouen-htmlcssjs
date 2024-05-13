@@ -11,12 +11,14 @@
 @use "component/title";
 @use "component/btn";
 @use "component/inner";
+@use "component/text";
 
 // Object - Project
 @use "project/first-view";
 @use "project/about";
 @use "project/faq";
 @use "project/activity";
+@use "project/notice";
 
 // Object - Utility
 @use "utility/color";

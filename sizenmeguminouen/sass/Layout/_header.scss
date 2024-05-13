@@ -1,5 +1,5 @@
 @use "../Foundation/mixin";
-@use "../../global/variables" as *;
+@use "../global/variables" as *;
 .l-header {
   width: 100%;
   position: fixed;
@@ -153,7 +153,6 @@
 .l-hamburger-content {
   opacity: 0;
   height: 0;
-  background-color: $bg-color;
   pointer-events: none;
 
   @include mixin.mq("pc") {

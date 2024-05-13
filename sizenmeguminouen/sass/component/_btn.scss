@@ -1,0 +1,16 @@
+@use "../global/variables" as *;
+
+.c-view-more {
+  width: 301px;
+  height: 70px;
+  background-color: #fff;
+  border: 2px solid $main-color;
+  border-radius: 50px;
+
+  a {
+    font-size: 20px;
+    color: $main-color;
+    font-family: $font-family;
+    letter-spacing: 2px;
+  }
+}

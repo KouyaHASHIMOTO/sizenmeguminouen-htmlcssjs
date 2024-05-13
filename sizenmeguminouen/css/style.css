@@ -91,7 +91,6 @@ h2 {
 body {
   font-size: 16px;
   color: #555555;
-  background-color: #f9f9f9;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
 }
 
@@ -102,6 +101,12 @@ body.no_scroll {
 img {
   width: 100%;
   height: auto;
+}
+
+.scroll-container {
+  position: relative;
+  background-color: #f9f9f9;
+  z-index: 1;
 }
 
 .l-header {
@@ -248,7 +253,6 @@ img {
 .l-hamburger-content {
   opacity: 0;
   height: 0;
-  background-color: #f9f9f9;
   pointer-events: none;
 }
 @media screen and (min-width: 960px) {
@@ -335,14 +339,23 @@ img {
   margin-top: -5px;
 }
 
+.c-view-more {
+  width: 301px;
+  height: 70px;
+  background-color: #fff;
+  border: 2px solid #93c572;
+  border-radius: 50px;
+}
+.c-view-more a {
+  font-size: 20px;
+  color: #93c572;
+  font-family: "Archivo Narrow", sans-serif;
+  letter-spacing: 2px;
+}
+
 .p-first-view {
   height: 600px;
   position: relative;
-}
-
-.p-first-view__scroll-container {
-  position: relative;
-  z-index: 1;
 }
 
 .p-first-view::before {
@@ -592,7 +605,6 @@ img {
 }
 
 .p-about {
-  background-color: #f9f9f9;
   text-align: center;
   position: relative;
 }
@@ -645,10 +657,6 @@ img {
   width: 92px;
   right: 47px;
   bottom: 40px;
-}
-
-.p-faq {
-  background-color: #f9f9f9;
 }
 
 .p-faq__wrapper {
@@ -937,6 +945,74 @@ img {
 
 .p-activity__tab-content-slider .slick-slide {
   margin-right: 10px;
+}
+
+.p-notice {
+  position: relative;
+}
+
+.p-notice__container-block {
+  padding-left: 15px;
+  padding-right: 16px;
+}
+
+.p-notice__title-text {
+  font-size: 30px;
+}
+
+.p-notice__line {
+  height: 10px;
+}
+
+.p-notice__description {
+  margin-top: 30px;
+}
+
+.p-notice__sp-view-more {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 440px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+}
+
+.p-notice__list {
+  background-color: #fff;
+  width: 361px;
+  height: 381px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 50px 0px 0px 50px;
+  position: absolute;
+  top: 173px;
+  right: 0px;
+  padding-top: 30px;
+  padding-left: 21px;
+}
+
+.p-notice__content-block {
+  gap: 27px;
+}
+
+.p-notice__content-time {
+  font-family: "Archivo Narrow", sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.p-notice__content-category {
+  text-align: center;
+  width: 96px;
+  height: 26px;
+  background-color: #93c572;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-top: 3px;
+  color: #fff;
+}
+
+.p-notice__content-text {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .u-flex {

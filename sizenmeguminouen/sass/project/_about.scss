@@ -1,8 +1,7 @@
-@use "../../global/variables" as *;
+@use "../global/variables" as *;
 @use "../Foundation/mixin";
 
 .p-about {
-  background-color: $bg-color;
   text-align: center;
   position: relative;
 }

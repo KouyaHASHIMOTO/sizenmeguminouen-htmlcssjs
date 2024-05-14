@@ -9,53 +9,88 @@
 }
 
 .p-access__heading {
+  text-align: center;
 }
 
 .p-access__heading-text {
 }
 
 .p-access__line {
-  height: 11px;
+  margin: 0 auto;
+  width: 159px;
+  height: 13px;
 }
 
 .c-line {
 }
 
 .p-access__card {
-  height: 600px;
+  margin: 0 auto;
+  width: 345px;
   display: grid;
   grid-template-columns: 139px 206px;
   grid-template-rows: 350px 250px;
   border-radius: 50px;
+  margin-top: 40px;
 }
 
 .p-access__item {
+  padding-top: 32px;
+  padding-left: 20px;
+  border-radius: 50px 0px 0px 0px;
   background-color: $main-color;
+
+  :nth-of-type(n + 1) {
+    font-weight: bold;
+    height: 16px;
+  }
 }
 
 .p-access__item-company {
 }
 
-.p-access__item-access {
+.p-access__item-address {
+  margin-top: 30px;
 }
 
 .p-access__item-phone {
+  margin-top: 70px;
 }
 
 .p-access__item-hour {
+  margin-top: 30px;
+}
+
+.p-access__item-expansion {
+  margin-top: 11px !important;
+  font-size: 12px;
+  border-bottom: 0.5px solid #555555;
 }
 
 .p-access__item-map {
+  margin-top: 52px;
+  margin-bottom: 11px;
 }
 
 .p-access__info {
+  padding-top: 32px;
+  padding-left: 20px;
+  border-radius: 0px 50px 0px 0px;
   background-color: #fff;
+
+  :nth-of-type(n + 1) {
+    font-size: 14px;
+  }
+
+  p:nth-child(n + 1) {
+    margin-top: 22px;
+  }
 }
 
 .p-access__info-title {
 }
 
-.p-access__info-access {
+.p-access__info-address {
 }
 
 .p-access__info-phone {
@@ -65,5 +100,9 @@
 }
 
 .p-access__map {
-  grid-column: 1/4;
+  grid-column: 1/2;
+
+  iframe {
+    border-radius: 0px 0px 50px 50px;
+  }
 }

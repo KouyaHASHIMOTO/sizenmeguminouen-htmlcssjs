@@ -1,0 +1,46 @@
+@use "../global/variables" as *;
+
+.p-contact {
+  width: 345px;
+  height: 450px;
+  background-color: $accent-color;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px #00000029;
+  text-align: center;
+  color: #fff;
+}
+
+.p-contact__wrapper {
+  padding: 50px 21px 34px 23px;
+  :nth-child(n + 2) {
+    margin-top: 20px;
+  }
+}
+
+.p-contact__heading {
+  font-size: 30px;
+}
+
+.p-contact__description {
+  font-size: 18px;
+}
+
+.p-contact__button {
+  padding-top: 20px;
+  margin-top: 20px;
+
+  p {
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}
+
+.c-view-more {
+}
+
+.p-contact__number {
+}
+
+.p-contact__hours {
+}

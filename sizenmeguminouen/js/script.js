@@ -25,7 +25,7 @@ $(".p-faq__question").on("click", function () {
     //それ以外は
     $(".close").removeClass("close"); //クラス名closeを全て除去した後
     $(this).addClass("close"); //クリックしたタイトルにクラス名closeを付与し
-    $(findAnswer).slideDown(500); //アコーディオンを開く
+    $(findAnswer).slideDown(300); //アコーディオンを開く
   }
 });
 //ページが読み込まれた際にopenクラスをつけ、openがついていたら開く動作
@@ -39,7 +39,7 @@ $(window).on("load", function () {
 
     $(question).addClass("close"); //質問にクラス名closeを付与し
     var answer = $(element).children(".p-faq__answer"); //openクラスの子要素p-faq__answerクラスを取得
-    $(answer).slideDown(500); //アコーディオンを開く
+    $(answer).slideDown(300); //アコーディオンを開く
   });
 });
 

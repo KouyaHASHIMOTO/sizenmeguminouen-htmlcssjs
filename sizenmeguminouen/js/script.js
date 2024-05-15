@@ -137,16 +137,16 @@ $(window).scroll(function () {
   });
 });
 
-// function ScrollAnime() {
-//   var areaTop = $("#about").offset().top; // #p-activityの位置
-//   var scroll = $(window).scrollTop(); // 現在のスクロール位置
-
-//   if (scroll > areaTop) {
-//     $(".p-first-view__news").removeClass("is-active");
-//   } else {
-//     $(".p-first-view__news").addClass("is-active");
-//   }
-// }
-
-// // スクロールイベントに関数をバインド
-// $(window).on("scroll", ScrollAnime);
+//aboutのアニメーション
+$(window).scroll(function () {
+  $(".p-about__text").each(function () {
+    var scroll = $(window).scrollTop(); //スクロールをしたheightの数値
+    var elemPos = $(this).offset().top; //画面トップから指定した要素までのheight
+    var windowHeight = $(window).height(); //ブラウザのウィンドウのheightの数値;
+    if (scroll > elemPos - windowHeight) {
+      $(this).addClass("is-active");
+    } else {
+      $(this).removeClass("is-active");
+    }
+  });
+});

@@ -139,14 +139,12 @@ $(window).scroll(function () {
 
 //aboutのアニメーション
 $(window).scroll(function () {
-  $(".p-about__text").each(function () {
+  $(".p-about__img").each(function () {
     var scroll = $(window).scrollTop(); //スクロールをしたheightの数値
     var elemPos = $(this).offset().top; //画面トップから指定した要素までのheight
     var windowHeight = $(window).height(); //ブラウザのウィンドウのheightの数値;
-    if (scroll > elemPos - windowHeight) {
+    if ((scroll = 30)) {
       $(this).addClass("is-active");
-    } else {
-      $(this).removeClass("is-active");
     }
   });
 });

@@ -1,4 +1,4 @@
-@use "../Foundation/mixin";
+@use "../Foundation/mixin" as *;
 @use "../global/variables" as *;
 .l-header {
   width: 100%;
@@ -6,7 +6,7 @@
   background-color: #ffffff;
   z-index: 9999;
 
-  @include mixin.mq("pc") {
+  @include mq("pc") {
     width: 95%;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 100px;
@@ -22,7 +22,7 @@
   padding-left: 10px;
   padding-right: 10px;
 
-  @include mixin.mq("pc") {
+  @include mq("pc") {
     padding-left: 40px;
     padding-right: 30px;
     padding-bottom: 0;
@@ -31,6 +31,13 @@
 
 .l-header__sp {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mq("pc") {
+    width: 0%;
+  }
 }
 
 .l-header__logo {
@@ -41,6 +48,10 @@
 
 // ハンバーガーメニューのスタイル
 .l-header__hamburger-menu {
+  @include mq("pc") {
+    display: none;
+  }
+
   position: relative; /*ボタン内側の基点となるためrelativeを指定*/
   background: #fff;
   cursor: pointer;
@@ -105,7 +116,7 @@
     width: 116px;
   }
 
-  @include mixin.mq("pc") {
+  @include mq("pc") {
     img {
       width: 169px;
     }
@@ -118,15 +129,16 @@
 .l-header__nav {
   display: none;
 
-  @include mixin.mq("pc") {
+  @include mq("pc") {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     gap: 21px;
   }
 }
 
 .l-header__nav-list {
   gap: 20px;
+  flex-direction: row;
 }
 
 .l-header__nav-item {
@@ -155,7 +167,7 @@
   height: 0;
   pointer-events: none;
 
-  @include mixin.mq("pc") {
+  @include mq("pc") {
     display: none;
   }
 }

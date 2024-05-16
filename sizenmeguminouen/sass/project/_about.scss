@@ -1,5 +1,5 @@
 @use "../global/variables" as *;
-@use "../Foundation/mixin";
+@use "../Foundation/mixin" as *;
 
 .p-about {
   text-align: center;
@@ -48,24 +48,24 @@
     position: absolute;
     width: 63px;
     top: 40px;
-    left: 34px;
+    left: -63px;
   }
   img:nth-child(2) {
     position: absolute;
-    width: 57px;
-    top: 50px;
+    width: 0px;
+    top: -70px;
     right: 42px;
   }
   img:nth-child(3) {
     position: absolute;
     width: 86px;
     left: 46px;
-    bottom: 67px;
+    bottom: -88px;
   }
   img:nth-child(4) {
     position: absolute;
-    width: 92px;
-    right: 47px;
+    width: 0px;
+    right: -92px;
     bottom: 40px;
   }
 }
@@ -76,31 +76,70 @@
     width: 63px;
     top: 40px;
     left: 34px;
-    animation: 1s fadeup1 ease forwards;
+    animation: 2s fadeup1 ease forwards;
   }
   img:nth-child(2) {
     position: absolute;
     width: 57px;
     top: 50px;
     right: 42px;
+    animation: 2s fadeup2 ease forwards;
   }
   img:nth-child(3) {
     position: absolute;
     width: 86px;
     left: 46px;
     bottom: 67px;
+    animation: 2s fadeup3 ease forwards;
   }
   img:nth-child(4) {
     position: absolute;
     width: 92px;
     right: 47px;
     bottom: 40px;
+    animation: 2s fadeup4 ease forwards;
   }
 }
 @keyframes fadeup1 {
   0% {
     opacity: 0;
     transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeup2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeup3 {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeup4 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
   }
 
   100% {

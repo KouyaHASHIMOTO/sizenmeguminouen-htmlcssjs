@@ -1,9 +1,12 @@
 @use "../global/variables" as *;
-@use "../Foundation/mixin";
+@use "../Foundation/mixin" as *;
 .p-first-view {
   height: 600px;
-
   position: relative;
+
+  @include mq("pc") {
+    height: 100vh;
+  }
 }
 
 .p-first-view::before {
@@ -20,6 +23,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include mq("pc") {
+    height: 100vh;
+  }
 }
 
 .p-first-view__wrapper {
@@ -39,6 +46,10 @@
   gap: 5px;
   text-align: center;
   justify-content: center;
+
+  @include mq("pc") {
+    flex-direction: column;
+  }
 }
 
 .p-first-view__logo {
@@ -131,7 +142,7 @@
 /*スクロールダウン全体の場所*/
 .p-first-view__scrolldown {
   opacity: 0;
-  @include mixin.mq("pc") {
+  @include mq("pc") {
     opacity: 1;
     /*描画位置※位置は適宜調整してください*/
     position: absolute;
@@ -173,7 +184,7 @@
 .p-first-view__scrolldown:before {
   height: 0;
 
-  @include mixin.mq("pc") {
+  @include mq("pc") {
     content: "";
     /*描画位置*/
     position: absolute;

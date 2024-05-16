@@ -1,11 +1,13 @@
 @use "../global/variables" as *;
 
 .p-activity {
+  width: 1163px;
   position: relative;
   background: #fff;
   padding-bottom: 50px;
   box-shadow: 1px -1px 10px #00000029;
   z-index: 1;
+  border-radius: 0px 100px 100px 0px;
 }
 
 .p-activity__wrapper {

@@ -49,6 +49,7 @@
 
   @include mq("pc") {
     flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -56,6 +57,13 @@
   img {
     width: 72px;
     height: 56px;
+  }
+
+  @include mq("pc") {
+    img {
+      width: 203px;
+      height: 157px;
+    }
   }
 }
 
@@ -65,6 +73,14 @@
   font-weight: bold;
   font-size: 25px;
   letter-spacing: 3.75px;
+
+  @include mq("pc") {
+    width: 920px;
+    font-size: 50px;
+    letter-spacing: 7.5px;
+    color: #87b16c;
+    text-shadow: 0px 3px 3px #0000004d;
+  }
 }
 
 //news
@@ -79,7 +95,16 @@
   opacity: 0;
   position: absolute;
   bottom: 3.33%;
-  animation: 1s fadeout ease forwards;
+  animation: 2s fadeout ease forwards;
+
+  @include mq("pc") {
+    display: none;
+    width: 337px;
+    height: 109px;
+    left: auto;
+    right: 3.33%;
+    bottom: 3.33%;
+  }
 }
 @keyframes fadeout {
   0% {
@@ -89,18 +114,18 @@
 
   100% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(100px);
   }
 }
 
 .p-first-view__news.is-active {
-  animation: 1s fadeup ease forwards;
+  animation: 2s fadeup ease forwards;
 }
 
 @keyframes fadeup {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(100px);
   }
 
   100% {
@@ -111,23 +136,42 @@
 
 .p-first-view__news-wrapper {
   padding: 10px 7px 10px 10px;
+
+  @include mq("pc") {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+  }
 }
-.p-first-view__news-header {
+.p-first-view__news-heading {
   display: flex;
   align-items: center;
   gap: 10px;
+
+  @include mq("pc") {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 .p-first-view__news-title {
   font-size: 14px;
   letter-spacing: 0.7px;
   font-family: $font-family;
+
+  @include mq("pc") {
+    font-size: 20px;
+  }
 }
 
 .p-first-view__news-time {
   font-size: 10px;
   letter-spacing: 0.5px;
   font-family: $font-family;
+
+  @include mq("pc") {
+    font-size: 12px;
+  }
 }
 
 .p-first-view__news-text {
@@ -135,6 +179,10 @@
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0.6px;
+
+  @include mq("pc") {
+    font-size: 16px;
+  }
 }
 
 /*=== 9-1-4 矢印が動いてスクロールを促す  ====*/

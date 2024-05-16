@@ -11,6 +11,10 @@
   padding-bottom: 182px;
   padding-right: 15px;
   padding-left: 15px;
+
+  @include mq("pc") {
+    margin-top: 160px;
+  }
 }
 
 .p-about__logo {
@@ -18,6 +22,13 @@
 
   img {
     width: 232px;
+  }
+
+  @include mq("pc") {
+    img {
+      width: 314px;
+      height: 54px;
+    }
   }
 }
 
@@ -32,6 +43,7 @@
 
 .p-about__text {
   margin-top: 30px;
+  line-height: 32px;
   p {
     font-size: 16px;
     font-weight: bold;
@@ -40,64 +52,108 @@
       margin-top: 20px;
     }
   }
+
+  @include mq("pc") {
+  }
+}
+
+.ip-about__text-is-hidden {
+  display: none;
 }
 
 .p-about__img {
-  width: 10px;
+  visibility: hidden;
   img:nth-child(1) {
     position: absolute;
-    width: 63px;
+    height: 0;
     top: 40px;
-    left: -63px;
+    left: 34px;
+
+    @include mq("pc") {
+      top: 45px;
+      left: 203px;
+    }
   }
   img:nth-child(2) {
     position: absolute;
-    width: 0px;
-    top: -70px;
+    height: 0;
+    top: 50px;
     right: 42px;
+
+    @include mq("pc") {
+      top: 93px;
+      right: 203px;
+    }
   }
   img:nth-child(3) {
     position: absolute;
-    width: 86px;
+    height: 0;
     left: 46px;
-    bottom: -88px;
+    bottom: 67px;
+
+    @include mq("pc") {
+      left: 312px;
+      bottom: 122px;
+    }
   }
   img:nth-child(4) {
     position: absolute;
-    width: 0px;
-    right: -92px;
+    height: 0;
+    right: 47px;
     bottom: 40px;
+
+    @include mq("pc") {
+      right: 227px;
+      bottom: 53px;
+    }
   }
 }
 
 .p-about__img.is-active {
+  visibility: visible;
   img:nth-child(1) {
     position: absolute;
     width: 63px;
-    top: 40px;
-    left: 34px;
+    height: 79px;
     animation: 2s fadeup1 ease forwards;
+
+    @include mq("pc") {
+      width: 200px;
+      height: 252px;
+    }
   }
   img:nth-child(2) {
     position: absolute;
     width: 57px;
-    top: 50px;
-    right: 42px;
+    height: 68px;
     animation: 2s fadeup2 ease forwards;
+
+    @include mq("pc") {
+      width: 181px;
+      height: 217px;
+    }
   }
   img:nth-child(3) {
     position: absolute;
     width: 86px;
-    left: 46px;
-    bottom: 67px;
+    height: 86px;
     animation: 2s fadeup3 ease forwards;
+
+    @include mq("pc") {
+      width: 200px;
+      height: 200px;
+    }
   }
   img:nth-child(4) {
     position: absolute;
     width: 92px;
-    right: 47px;
-    bottom: 40px;
+    height: 113px;
     animation: 2s fadeup4 ease forwards;
+
+    @include mq("pc") {
+      width: 235px;
+      height: 269px;
+    }
   }
 }
 @keyframes fadeup1 {

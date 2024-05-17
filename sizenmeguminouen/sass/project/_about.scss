@@ -4,6 +4,10 @@
 .p-about {
   text-align: center;
   position: relative;
+
+  @include mq("pc") {
+    height: 750px;
+  }
 }
 
 .p-about__wrapper {
@@ -13,7 +17,6 @@
   padding-left: 15px;
 
   @include mq("pc") {
-    margin-top: 160px;
   }
 }
 
@@ -54,6 +57,7 @@
   }
 
   @include mq("pc") {
+    margin-top: 60px;
   }
 }
 
@@ -93,7 +97,7 @@
 
     @include mq("pc") {
       left: 312px;
-      bottom: 122px;
+      top: 479px;
     }
   }
   img:nth-child(4) {
@@ -104,7 +108,7 @@
 
     @include mq("pc") {
       right: 227px;
-      bottom: 53px;
+      top: 479px;
     }
   }
 }

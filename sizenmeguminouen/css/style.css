@@ -784,6 +784,11 @@ img {
   text-align: center;
   position: relative;
 }
+@media screen and (min-width: 960px) {
+  .p-about {
+    height: 750px;
+  }
+}
 
 .p-about__wrapper {
   padding-top: 130px;
@@ -791,12 +796,6 @@ img {
   padding-right: 15px;
   padding-left: 15px;
 }
-@media screen and (min-width: 960px) {
-  .p-about__wrapper {
-    margin-top: 160px;
-  }
-}
-
 .p-about__logo {
   text-align: center;
 }
@@ -821,6 +820,12 @@ img {
 .p-about__text p:nth-child(4) {
   margin-top: 20px;
 }
+@media screen and (min-width: 960px) {
+  .p-about__text {
+    margin-top: 60px;
+  }
+}
+
 .ip-about__text-is-hidden {
   display: none;
 }
@@ -861,7 +866,7 @@ img {
 @media screen and (min-width: 960px) {
   .p-about__img img:nth-child(3) {
     left: 312px;
-    bottom: 122px;
+    top: 479px;
   }
 }
 .p-about__img img:nth-child(4) {
@@ -873,7 +878,7 @@ img {
 @media screen and (min-width: 960px) {
   .p-about__img img:nth-child(4) {
     right: 227px;
-    bottom: 53px;
+    top: 479px;
   }
 }
 
@@ -1030,6 +1035,12 @@ img {
             transform: translateX(0);
   }
 }
+@media screen and (min-width: 960px) {
+  .p-faq {
+    margin-top: 805px;
+  }
+}
+
 .p-faq__wrapper {
   padding-top: 78px;
   padding-bottom: 77px;
@@ -1253,14 +1264,21 @@ img {
 }
 
 .p-activity {
-  width: 1163px;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 801px;
   background: #fff;
   padding-bottom: 50px;
-  -webkit-box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.1607843137);
-          box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.1607843137);
   z-index: 1;
-  border-radius: 0px 100px 100px 0px;
+}
+@media screen and (min-width: 960px) {
+  .p-activity {
+    width: 1163px;
+    border-radius: 0px 100px 100px 0px;
+    -webkit-box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.1607843137);
+            box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.1607843137);
+    padding-right: 50px;
+  }
 }
 
 .p-activity__wrapper {
@@ -1269,6 +1287,12 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 960px) {
+  .p-activity__wrapper {
+    padding-top: 80px;
+    padding-left: 203px;
+  }
+}
 
 .p-activity__heading-text {
   font-size: 30px;
@@ -1276,9 +1300,20 @@ img {
   letter-spacing: 3px;
   color: #555555;
 }
+@media screen and (min-width: 960px) {
+  .p-activity__heading-text {
+    font-size: 40px;
+  }
+}
 
 .p-activity__line {
   height: 10px;
+}
+@media screen and (min-width: 960px) {
+  .p-activity__line {
+    height: 14px;
+    margin-top: 2px;
+  }
 }
 
 .p-activity__tab {
@@ -1292,6 +1327,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 960px) {
+  .p-activity__tab {
+    margin-top: 45px;
+    gap: 20px;
+  }
 }
 
 .p-activity__tab-btn {
@@ -1307,10 +1348,24 @@ img {
   padding: 17px 39px;
   font-weight: bold;
 }
+@media screen and (min-width: 960px) {
+  .p-activity__tab-btn a {
+    font-size: 20px;
+    padding: 23px 75px;
+    border-radius: 20px;
+  }
+}
 
 .p-activity__tab-btn-unique a {
   font-size: 14px;
   padding: 18px 6px;
+}
+@media screen and (min-width: 960px) {
+  .p-activity__tab-btn-unique a {
+    font-size: 20px;
+    width: 140px;
+    padding: 22px 25px;
+  }
 }
 
 /*タブのコンテンツの表示非表示と形状*/
@@ -1321,9 +1376,17 @@ img {
   margin: 0;
 }
 .p-activity__tab-content p {
+  font-weight: 500;
   min-height: 170px;
   padding-right: 15px;
   padding-left: 15px;
+}
+@media screen and (min-width: 960px) {
+  .p-activity__tab-content p {
+    padding-left: 203px;
+    width: 910px;
+    min-height: 64px;
+  }
 }
 
 /*areaにis-activeというクラスがついた時の形状*/
@@ -1360,6 +1423,14 @@ img {
 }
 .p-activity__tab-content-slider img {
   height: auto;
+}
+@media screen and (min-width: 960px) {
+  .p-activity__tab-content-slider {
+    margin-top: 70px;
+  }
+  .p-activity__tab-content-slider li {
+    margin: 20px;
+  }
 }
 
 .p-activity__tab li.is-active a {

@@ -2,6 +2,9 @@
 @use "../foundation/mixin" as *;
 
 .p-faq {
+  @include mq("pc") {
+    margin-top: 805px;
+  }
 }
 
 .p-faq__wrapper {

@@ -95,7 +95,7 @@ $(".p-activity__tab-content-slider").slick({
   pauseOnHover: false, //オンマウスでスライドを一時停止させるかどうか。初期値はtrue。
   pauseOnFocus: false, //フォーカスした際にスライドを一時停止させるかどうか。初期値はtrue。
   cssEase: "linear", //動き方。初期値はeaseですが、スムースな動きで見せたいのでlinear
-  slidesToShow: 3, //スライドを画面に4枚見せる
+  slidesToShow: 3.5, //スライドを画面に4枚見せる
   slidesToScroll: 1, //1回のスライドで動かす要素数
   responsive: [
     {

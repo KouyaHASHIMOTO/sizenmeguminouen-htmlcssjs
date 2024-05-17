@@ -1,13 +1,20 @@
 @use "../global/variables" as *;
+@use "../Foundation/mixin" as *;
 
 .p-activity {
-  width: 1163px;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 801px;
   background: #fff;
   padding-bottom: 50px;
-  box-shadow: 1px -1px 10px #00000029;
   z-index: 1;
-  border-radius: 0px 100px 100px 0px;
+
+  @include mq("pc") {
+    width: 1163px;
+    border-radius: 0px 100px 100px 0px;
+    box-shadow: 1px -1px 10px #00000029;
+    padding-right: 50px;
+  }
 }
 
 .p-activity__wrapper {
@@ -15,6 +22,11 @@
   padding-bottom: 50px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include mq("pc") {
+    padding-top: 80px;
+    padding-left: 203px;
+  }
 }
 
 .p-activity__heading {
@@ -25,10 +37,19 @@
   font-weight: bold;
   letter-spacing: 3px;
   color: $text-color;
+
+  @include mq("pc") {
+    font-size: 40px;
+  }
 }
 
 .p-activity__line {
   height: 10px;
+
+  @include mq("pc") {
+    height: 14px;
+    margin-top: 2px;
+  }
 }
 
 .p-activity__tab {
@@ -37,6 +58,11 @@
   flex-wrap: wrap;
   gap: 7px;
   align-items: center;
+
+  @include mq("pc") {
+    margin-top: 45px;
+    gap: 20px;
+  }
 }
 
 .p-activity__tab-btn {
@@ -50,12 +76,28 @@
     padding: 17px 39px;
     font-weight: bold;
   }
+
+  @include mq("pc") {
+    a {
+      font-size: 20px;
+      padding: 23px 75px;
+      border-radius: 20px;
+    }
+  }
 }
 
 .p-activity__tab-btn-unique {
   a {
     font-size: 14px;
     padding: 18px 6px;
+  }
+
+  @include mq("pc") {
+    a {
+      font-size: 20px;
+      width: 140px;
+      padding: 22px 25px;
+    }
   }
 }
 
@@ -65,14 +107,25 @@
   // display: none;
   height: 0;
   opacity: 0; /*透過0*/
-
   margin: 0;
 
   p {
+    font-weight: 500;
     min-height: 170px;
     padding-right: 15px;
     padding-left: 15px;
   }
+
+  @include mq("pc") {
+    p {
+      padding-left: 203px;
+      width: 910px;
+      min-height: 64px;
+    }
+  }
+}
+
+.p-activity__tab-content-description {
 }
 
 /*areaにis-activeというクラスがついた時の形状*/
@@ -103,6 +156,13 @@
 
   img {
     height: auto;
+  }
+
+  @include mq("pc") {
+    margin-top: 70px;
+    li {
+      margin: 20px;
+    }
   }
 }
 

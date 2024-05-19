@@ -1,5 +1,6 @@
 @use "../global/variables" as *;
 @use "../Foundation/mixin" as *;
+@use "../utility/flex" as *;
 
 .p-about {
   text-align: center;
@@ -24,12 +25,12 @@
   text-align: center;
 
   img {
-    width: 232px;
+    width: px-to-vw(232, 375);
   }
 
   @include mq("pc") {
     img {
-      width: 314px;
+      width: px-to-vw(314);
       height: 54px;
     }
   }
@@ -59,10 +60,6 @@
   @include mq("pc") {
     margin-top: 60px;
   }
-}
-
-.ip-about__text-is-hidden {
-  display: none;
 }
 
 .p-about__img {
@@ -117,46 +114,42 @@
   visibility: visible;
   img:nth-child(1) {
     position: absolute;
-    width: 63px;
-    height: 79px;
+    width: px-to-vw(63, 375);
+    height: auto;
     animation: 2s fadeup1 ease forwards;
 
     @include mq("pc") {
-      width: 200px;
-      height: 252px;
+      width: px-to-vw(200);
     }
   }
   img:nth-child(2) {
     position: absolute;
-    width: 57px;
-    height: 68px;
+    width: px-to-vw(57, 375);
+    height: auto;
     animation: 2s fadeup2 ease forwards;
 
     @include mq("pc") {
-      width: 181px;
-      height: 217px;
+      width: px-to-vw(181);
     }
   }
   img:nth-child(3) {
     position: absolute;
-    width: 86px;
-    height: 86px;
+    width: px-to-vw(86, 375);
+    height: auto;
     animation: 2s fadeup3 ease forwards;
 
     @include mq("pc") {
-      width: 200px;
-      height: 200px;
+      width: px-to-vw(200);
     }
   }
   img:nth-child(4) {
     position: absolute;
-    width: 92px;
-    height: 113px;
+    width: px-to-vw(92, 375);
+    height: auto;
     animation: 2s fadeup4 ease forwards;
 
     @include mq("pc") {
-      width: 235px;
-      height: 269px;
+      width: px-to-vw(235);
     }
   }
 }

@@ -1,4 +1,5 @@
 @use "../global/variables" as *;
+@use "../Foundation/mixin" as *;
 
 .c-view-more {
   width: 301px;
@@ -10,6 +11,11 @@
   p {
     font-size: 20px;
     color: $main-color;
+
     letter-spacing: 2px;
+  }
+
+  @include mq("pc") {
+    width: px-to-vw(300);
   }
 }

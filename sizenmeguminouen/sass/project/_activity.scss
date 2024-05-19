@@ -8,12 +8,13 @@
   background: #fff;
   padding-bottom: 50px;
   z-index: 1;
+  box-shadow: 1px -1px 10px #00000029;
 
   @include mq("pc") {
-    width: 1163px;
+    width: px-to-vw(1163);
     border-radius: 0px 100px 100px 0px;
-    box-shadow: 1px -1px 10px #00000029;
-    padding-right: 50px;
+
+    padding-bottom: 80px;
   }
 }
 

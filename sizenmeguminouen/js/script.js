@@ -78,10 +78,8 @@ $(".p-activity__tab a").on("click", function () {
 $(window).on("load", function () {
   $(".p-activity__tab li:first-of-type").addClass("is-active"); //最初のliにactiveクラスを追加
   $(".p-activity__tab-content:first-of-type").addClass("is-active"); //最初の.areaにis-activeクラスを追加
-  var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
-  if (!hashName) {
-    hashName = "#farm";
-  }
+
+  var hashName = "#farm"; //URLのハッシュタグの値を取得
   GethashID(hashName); //設定したタブの読み込み
 });
 
@@ -123,6 +121,19 @@ $(".l-header__hamburger-menu").click(function () {
 });
 
 //first-viewのnewsアニメーション
+
+$(window).on("load", function () {
+  $(".p-first-view__news").each(function () {
+    var scroll = $(window).scrollTop(); //スクロールをしたheightの数値
+    var elemPos = $(this).offset().top; //画面トップから指定した要素までのheight
+    var windowHeight = $(window).height(); //ブラウザのウィンドウのheightの数値;
+    if (scroll > windowHeight - elemPos) {
+      $(this).removeClass("is-active");
+    } else {
+      $(this).addClass("is-active");
+    }
+  });
+});
 
 $(window).scroll(function () {
   $(".p-first-view__news").each(function () {

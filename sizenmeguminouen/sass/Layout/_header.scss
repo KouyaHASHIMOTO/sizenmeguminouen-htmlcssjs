@@ -21,6 +21,7 @@
 .l-header__wrapper {
   padding-left: 10px;
   padding-right: 10px;
+  box-shadow: 0px 3px 6px #00000029;
 
   @include mq("pc") {
     padding-left: 40px;
@@ -194,9 +195,10 @@
 }
 
 .l-hamburger-content__link {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid $main-color;
+  border-bottom: 2px solid $main-color;
 }
 
 .l-hamburger-content__box {
@@ -215,6 +217,28 @@
   color: #f7b560;
   font-size: 12px;
   font-family: $font-family;
+}
+
+.l-hamburger-content__subtitle::before {
+  position: absolute;
+  right: -1px;
+  top: 43%;
+  content: "";
+  background-color: #93c572;
+  width: 11px;
+  height: 2px;
+  -webkit-transform: rotate(44deg);
+  transform: rotate(44deg);
+}
+
+.l-hamburger-content__subtitle::after {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  content: "";
+  background-color: #93c572;
+  width: 25px;
+  height: 2px;
 }
 
 .l-hamburger-content__arrow {
@@ -242,10 +266,13 @@
 }
 
 .l-hamburger-content__button {
+  width: 300px;
+  margin: 0 auto;
   background-color: #f7b560;
-  padding: 16px 101px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-radius: 24px;
-  margin-top: 25px;
+  margin-top: 20px;
   p {
     font-size: 16px;
     color: #ffffff;

@@ -1,4 +1,5 @@
 @use "../global/variables" as *;
+@use "../Foundation/mixin" as *;
 
 .l-footer {
   background-color: #fff;
@@ -9,6 +10,28 @@
   padding-top: 30px;
   padding-left: 14px;
   padding-bottom: 24px;
+
+  @include mq("pc") {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+}
+
+.l-footer__inner {
+  @include mq("pc") {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: px-to-vw(960);
+  }
+}
+
+.l-footer__left {
+}
+
+.l-footer__right {
+  @include mq("pc") {
+  }
 }
 
 .l-footer__logo {
@@ -35,11 +58,24 @@
 
 .l-footer__nav {
   margin-top: 30px;
+
+  @include mq("pc") {
+    margin-top: 0;
+  }
 }
 
 .l-footer__nav-list {
   :nth-child(n + 2) {
     margin-top: 10px;
+  }
+
+  @include mq("pc") {
+    display: flex;
+    gap: 18px;
+
+    :nth-child(n + 2) {
+      margin-top: 0px;
+    }
   }
 }
 
@@ -71,14 +107,24 @@
 
 .l-footer__x-button {
   right: 153px;
+
+  @include mq("pc") {
+    right: 340px;
+  }
 }
 
 .l-footer__instagram-button {
   right: 84px;
+  @include mq("pc") {
+    right: 271px;
+  }
 }
 
 .l-footer__youtube-button {
   right: 16px;
+  @include mq("pc") {
+    right: 203px;
+  }
 }
 
 .l-footer__copy {
@@ -87,4 +133,8 @@
   font-size: 12px;
   letter-spacing: 0.6px;
   margin-top: 120px;
+
+  @include mq("pc") {
+    margin-top: 30px;
+  }
 }

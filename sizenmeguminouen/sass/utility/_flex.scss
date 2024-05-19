@@ -1,3 +1,5 @@
+@use "../Foundation/mixin" as *;
+
 .u-flex {
   display: flex;
   align-items: center;
@@ -13,4 +15,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.u-pc-br-hidden {
+  @include mq("pc") {
+    display: none;
+  }
+}
+
+.u-pc-br-visible {
+  @include mq("sp") {
+    display: none;
+  }
 }

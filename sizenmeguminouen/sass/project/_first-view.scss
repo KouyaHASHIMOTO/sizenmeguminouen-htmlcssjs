@@ -95,18 +95,30 @@
   opacity: 0;
   position: absolute;
   bottom: 3.33%;
-  animation: 2s fadeout ease forwards;
+  animation: 2s fadeout-sp ease forwards;
 
   @include mq("pc") {
-    display: none;
     width: 337px;
     height: 109px;
     left: auto;
     right: 3.33%;
     bottom: 3.33%;
+    animation: 2s fadeout-pc ease forwards;
   }
 }
-@keyframes fadeout {
+@keyframes fadeout-sp {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes fadeout-pc {
   0% {
     opacity: 1;
     transform: translateX(0);
@@ -119,10 +131,25 @@
 }
 
 .p-first-view__news.is-active {
-  animation: 2s fadeup ease forwards;
+  animation: 2s fadeup-sp ease forwards;
+  @include mq("pc") {
+    animation: 2s fadeup-pc ease forwards;
+  }
 }
 
-@keyframes fadeup {
+@keyframes fadeup-sp {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeup-pc {
   0% {
     opacity: 0;
     transform: translateX(100px);

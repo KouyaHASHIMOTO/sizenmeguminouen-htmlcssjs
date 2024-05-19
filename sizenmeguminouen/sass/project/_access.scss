@@ -1,8 +1,4 @@
-@use "../global/variables" as *;
-@use "../Foundation/mixin" as *;
-
-.p-access {
-}
+@use "../global/forward" as *;
 
 .p-access__wrapper {
   padding-left: 15px;
@@ -14,7 +10,7 @@
   text-align: center;
 }
 
-.p-access__heading-text {
+.p-access__title {
   font-size: 30px;
   @include mq("pc") {
     font-size: 40px;
@@ -31,9 +27,6 @@
     width: 159px;
     height: 13px;
   }
-}
-
-.c-line {
 }
 
 .p-access__card {
@@ -71,9 +64,6 @@
     grid-row-end: 3;
     border-radius: 100px 0px 0px 100px;
   }
-}
-
-.p-access__item-company {
 }
 
 .p-access__item-address {
@@ -123,9 +113,6 @@
   border-radius: 0px 50px 0px 0px;
   background-color: #fff;
   font-size: 14px;
-  // :nth-of-type(n + 1) {
-  //   font-size: 14px;
-  // }
 
   p:nth-child(n + 1) {
     margin-top: 22px;
@@ -139,17 +126,6 @@
   }
 }
 
-.p-access__info-title {
-}
-
-.p-access__info-address {
-}
-
-.p-access__info-phone {
-}
-
-.p-access__info-hour {
-}
 
 .p-access__map {
   iframe {

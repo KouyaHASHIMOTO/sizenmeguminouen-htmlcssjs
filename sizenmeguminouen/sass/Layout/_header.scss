@@ -1,5 +1,4 @@
-@use "../Foundation/mixin" as *;
-@use "../global/variables" as *;
+@use "../global/forward" as *;
 .l-header {
   width: 100%;
   position: fixed;
@@ -27,6 +26,7 @@
     padding-left: 40px;
     padding-right: 30px;
     padding-bottom: 0;
+    box-shadow: none;
   }
 }
 
@@ -39,12 +39,6 @@
   @include mq("pc") {
     width: 0%;
   }
-}
-
-.l-header__logo {
-}
-
-.l-header__logo-img {
 }
 
 // ハンバーガーメニューのスタイル
@@ -124,9 +118,6 @@
   }
 }
 
-.l-header__logo-img {
-}
-
 .l-header__nav {
   display: none;
 
@@ -142,8 +133,6 @@
   flex-direction: row;
 }
 
-.l-header__nav-item {
-}
 
 .l-header__nav-link {
   color: #3b4043;
@@ -185,15 +174,6 @@
   padding-right: 15px;
 }
 
-.l-hamburger-content__menu {
-}
-
-.l-hamburger-content__list {
-}
-
-.l-hamburger-content__item {
-}
-
 .l-hamburger-content__link {
   position: relative;
   padding-top: 20px;
@@ -201,25 +181,22 @@
   border-bottom: 2px solid $main-color;
 }
 
-.l-hamburger-content__box {
+.l-hamburger-content__heading {
   gap: 10px;
 }
 
-.l-hamburger-content__group {
-}
-
-.l-hamburger-content__title {
+.l-hamburger-content__label {
   color: #3b4043;
   font-weight: bold;
 }
 
-.l-hamburger-content__subtitle {
+.l-hamburger-content__en-label {
   color: #f7b560;
   font-size: 12px;
   font-family: $font-family;
 }
 
-.l-hamburger-content__subtitle::before {
+.l-hamburger-content__en-label::before {
   position: absolute;
   right: -1px;
   top: 43%;
@@ -231,7 +208,7 @@
   transform: rotate(44deg);
 }
 
-.l-hamburger-content__subtitle::after {
+.l-hamburger-content__en-label::after {
   position: absolute;
   right: 0px;
   top: 50%;
@@ -239,9 +216,6 @@
   background-color: #93c572;
   width: 25px;
   height: 2px;
-}
-
-.l-hamburger-content__arrow {
 }
 
 .l-hamburger-content__contact {

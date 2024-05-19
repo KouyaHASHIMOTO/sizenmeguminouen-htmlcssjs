@@ -1,5 +1,4 @@
-@use "../global/variables" as *;
-@use "../Foundation/mixin" as *;
+@use "../global/forward" as *;
 
 .p-contact {
   width: 345px;
@@ -57,8 +56,6 @@
   }
 }
 
-.c-view-more {
-}
 
 .p-contact__number {
   margin-top: 20px;

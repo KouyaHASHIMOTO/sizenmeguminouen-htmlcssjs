@@ -1,5 +1,4 @@
-@use "../global/variables" as *;
-@use "../Foundation/mixin" as *;
+@use "../global/forward" as *;
 
 .l-footer {
   background-color: #fff;
@@ -26,8 +25,6 @@
   }
 }
 
-.l-footer__left {
-}
 
 .l-footer__right {
   @include mq("pc") {
@@ -79,8 +76,7 @@
   }
 }
 
-.u-flex {
-}
+
 
 .l-footer__button {
   position: absolute;
@@ -96,9 +92,6 @@
     width: 25px;
     height: 25px;
   }
-}
-
-.l-footer__nav-item {
 }
 
 .l-footer__nav-link {

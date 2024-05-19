@@ -1,5 +1,4 @@
-@use "../global/variables" as *;
-@use "../Foundation/mixin" as *;
+@use "../global/forward" as *;
 
 .p-notice {
   position: relative;
@@ -27,7 +26,7 @@
   padding-right: 16px;
 }
 
-.p-notice__title-text {
+.p-notice__title {
   font-size: 30px;
   letter-spacing: 4px;
 
@@ -100,11 +99,6 @@ ul.p-notice__list > li:nth-child(n + 2) {
   }
 }
 
-.p-notice__item {
-}
-
-.p-notice__content {
-}
 
 .p-notice__content-inner {
   gap: 27px;

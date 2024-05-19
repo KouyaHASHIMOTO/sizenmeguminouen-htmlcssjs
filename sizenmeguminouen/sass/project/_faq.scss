@@ -1,5 +1,4 @@
-@use "../global/variables" as *;
-@use "../foundation/mixin" as *;
+@use "../global/forward" as *;
 
 .p-faq {
   margin-top: 700px;
@@ -25,7 +24,7 @@
   text-align: center;
 }
 
-.p-faq__heading-text {
+.p-faq__heading-title {
   width: 330px;
   font-size: 30px;
 

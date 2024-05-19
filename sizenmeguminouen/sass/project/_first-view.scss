@@ -1,5 +1,4 @@
-@use "../global/variables" as *;
-@use "../Foundation/mixin" as *;
+@use "../global/forward" as *;
 .p-first-view {
   height: 600px;
   position: relative;

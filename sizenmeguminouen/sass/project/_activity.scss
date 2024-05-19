@@ -1,5 +1,4 @@
-@use "../global/variables" as *;
-@use "../Foundation/mixin" as *;
+@use "../global/forward" as *;
 
 .p-activity {
   width: 100%;
@@ -30,10 +29,8 @@
   }
 }
 
-.p-activity__heading {
-}
 
-.p-activity__heading-text {
+.p-activity__heading-title {
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -126,8 +123,6 @@
   }
 }
 
-.p-activity__tab-content-description {
-}
 
 /*areaにis-activeというクラスがついた時の形状*/
 .p-activity__tab-content.is-active {
@@ -149,11 +144,7 @@
 }
 
 .p-activity__tab-content-slider {
-  // display: flex;
-  // flex-wrap: nowrap;
   margin-top: 40px;
-  // overflow-x: auto; /* コンテンツがはみ出る場合にスクロールバーを表示 */
-  // min-width: 100vw; /* 最小幅をビューポートの100%に設定 */
 
   img {
     height: auto;
@@ -172,8 +163,6 @@
   color: #ffffff;
 }
 
-.slick-list.draggable {
-}
 
 .p-activity__tab-content-slider .slick-slide {
   margin-right: 10px;

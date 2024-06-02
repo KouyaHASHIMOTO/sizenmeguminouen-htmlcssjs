@@ -7,6 +7,7 @@ body {
 }
 
 main {
+  background-color: $bg-color;
 }
 
 body.no_scroll {
@@ -14,7 +15,7 @@ body.no_scroll {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 

@@ -8,10 +8,12 @@
 @use "layout/footer";
 
 // Object - Component
+@use "component/breadcrumb";
 @use "component/title";
 @use "component/btn";
 @use "component/inner";
 @use "component/text";
+@use "component/card";
 
 // Object - Project
 @use "project/first-view";
@@ -21,6 +23,7 @@
 @use "project/notice";
 @use "project/access";
 @use "project/contact";
+@use "project/announcements";
 
 // Object - Utility
 @use "utility/color";

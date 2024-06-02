@@ -37,7 +37,7 @@
   justify-content: space-between;
 
   @include mq("pc") {
-    width: 0%;
+    width: 20%;
   }
 }
 
@@ -132,7 +132,6 @@
   gap: 20px;
   flex-direction: row;
 }
-
 
 .l-header__nav-link {
   color: #3b4043;

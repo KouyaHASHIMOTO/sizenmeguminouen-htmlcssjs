@@ -19,3 +19,23 @@
     width: px-to-vw(300);
   }
 }
+
+.c-pagination {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+
+  a {
+    padding-top: 12px;
+    font-family: $font-family;
+    color: $main-color;
+    font-size: 14px;
+    background-color: $bg-color;
+    display: inline-block;
+    min-width: 50px;
+    min-height: 50px;
+    border: 2px solid #f0f3f5;
+    border-radius: 10px;
+  }
+}

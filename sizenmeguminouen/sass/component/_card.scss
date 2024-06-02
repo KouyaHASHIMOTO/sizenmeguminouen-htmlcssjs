@@ -1,0 +1,15 @@
+@use "../global/forward" as *;
+
+.c-card {
+  width: px-to-vw(305, 375);
+  height: 200px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px;
+  background-color: $bg-color;
+  display: inline-block;
+  margin-top: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}

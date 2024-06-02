@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自然の恵み農園 | 自然の恵みを感じ、豊かな未来をつくる</title>
+    <meta
+      name="description"
+      content="自然の恵み農園は、農園運営・牧場運営・オンライン販売を通じ、自然の恵みを感じて、豊かな未来を想像して頂ける取り組みを行なっています。"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- スライドショーを実現するためのJavaScriptライブラリ -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="l-header__wrapper u-flex-between">
+        <!-- ハンバーガーメニュー用ブロック -->
+        <div class="l-header__sp">
+          <div class="l-header__logo">
+            <a href="" class="l-header__logo-link">
+              <img
+                src="images/logo.svg"
+                alt="自然の恵み農園"
+                class="l-header__logo-img"
+              />
+            </a>
+          </div>
+          <div class="l-header__hamburger-menu"><span></span><span></span></div>
+        </div>
+
+        <!-- PC画面のナビゲーション -->
+        <nav class="l-header__nav">
+          <ul class="l-header__nav-list u-flex">
+            <li class="l-header__nav-item">
+              <a href="#about" class="l-header__nav-link">私たちについて</a>
+            </li>
+            <li class="l-header__nav-item">
+              <a href="#service" class="l-header__nav-link">活動紹介</a>
+            </li>
+            <li class="l-header__nav-item">
+              <a href="#faq" class="l-header__nav-link">よくあるご質問</a>
+            </li>
+            <li class="l-header__nav-item">
+              <a href="#news" class="l-header__nav-link">お知らせ</a>
+            </li>
+            <li class="l-header__nav-item">
+              <a href="#access" class="l-header__nav-link">アクセス</a>
+            </li>
+          </ul>
+
+          <a href="">
+            <div class="l-header__button">
+              <p>お問い合わせ</p>
+            </div>
+          </a>
+        </nav>
+      </div>
+
+      <!-- ハンバーガーコンテンツ -->
+      <div class="l-hamburger-content">
+        <div class="l-hamburger-content__wrapper">
+          <nav class="l-hamburger-content__menu">
+            <ul class="l-hamburger-content__list">
+              <li class="l-hamburger-content__item">
+                <a href="#top" class="l-hamburger-content__link u-flex">
+                  <div class="l-hamburger-content__heading u-flex">
+                    <p class="l-hamburger-content__label">トップ</p>
+                    <p class="l-hamburger-content__en-label">TOP</p>
+                  </div>
+                  <div class="l-hamburger-content__arrow"></div>
+                </a>
+              </li>
+              <li class="l-hamburger-content__item">
+                <a href="#about" class="l-hamburger-content__link u-flex">
+                  <div class="l-hamburger-content__heading u-flex">
+                    <p class="l-hamburger-content__label">私たちについて</p>
+                    <p class="l-hamburger-content__en-label">ABOUT</p>
+                  </div>
+                  <div class="l-hamburger-content__arrow"></div>
+                </a>
+              </li>
+              <li class="l-hamburger-content__item">
+                <a href="#faq" class="l-hamburger-content__link u-flex">
+                  <div class="l-hamburger-content__heading u-flex">
+                    <p class="l-hamburger-content__label">よくあるご質問</p>
+                    <p class="l-hamburger-content__en-label">FAQ</p>
+                  </div>
+                  <div class="l-hamburger-content__arrow"></div>
+                </a>
+              </li>
+              <li class="l-hamburger-content__item">
+                <a href="#works" class="l-hamburger-content__link u-flex">
+                  <div class="l-hamburger-content__heading u-flex">
+                    <p class="l-hamburger-content__label">活動紹介</p>
+                    <p class="l-hamburger-content__en-label">WORKS</p>
+                  </div>
+                  <div class="l-hamburger-content__arrow"></div>
+                </a>
+              </li>
+              <li class="l-hamburger-content__item">
+                <a href="#news" class="l-hamburger-content__link u-flex">
+                  <div class="l-hamburger-content__heading u-flex">
+                    <p class="l-hamburger-content__label">お知らせ</p>
+                    <p class="l-hamburger-content__en-label">NEWS</p>
+                  </div>
+                  <div class="l-hamburger-content__arrow"></div>
+                </a>
+              </li>
+              <li class="l-hamburger-content__item">
+                <a href="#access" class="l-hamburger-content__link u-flex">
+                  <div class="l-hamburger-content__heading u-flex">
+                    <p class="l-hamburger-content__label">アクセス</p>
+                    <p class="l-hamburger-content__en-label">ACCESS</p>
+                  </div>
+                  <div class="l-hamburger-content__arrow"></div>
+                </a>
+              </li>
+            </ul>
+            <div class="l-hamburger-content__contact">
+              <p>
+                問い合わせ電話<br />
+                <span class="l-hamburger-content__number--big"
+                  >123-4567-8910</span
+                >
+              </p>
+
+              <div class="l-hamburger-content__hours">
+                <p>【受付時間】 <br />10:00 ~ 18:00（土日祝を除く）</p>
+              </div>
+              <a href="">
+                <div class="l-hamburger-content__button">
+                  <p>お問い合わせ</p>
+                </div>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="announcements" class="p-announcements">
+        <div class="p-announcements__wrapper">
+          <nav class="c-breadcrumbs">
+            <ol>
+              <li><a href="">ホーム</a></li>
+              <span class="c-breadcrumbs-arrow"></span>
+              <li><a href="">お知らせ一覧</a></li>
+            </ol>
+          </nav>
+          <div class="p-announcements__heading">
+            <h2 class="p-announcements__heading-title c-title">お知らせ一覧</h2>
+            <div class="p-announcements__line c-line"></div>
+          </div>
+        </div>
+        <ul class="p-announcements__tab">
+          <li class="p-announcements__tab-btn"><a href="#all">すべて</a></li>
+          <li class="p-announcements__tab-btn">
+            <a href="#category1">カテゴリー1</a>
+          </li>
+          <li class="p-announcements__tab-btn">
+            <a href="#category2">カテゴリー2</a>
+          </li>
+          <li class="p-announcements__tab-btn">
+            <a href="#category3">カテゴリー3</a>
+          </li>
+        </ul>
+        <div class="p-announcements__wrapper">
+          <div
+            id="all"
+            class="p-announcements__tab-content p-announcements__sp"
+          >
+            <div class="p-announcements__tab-content-wrapper">
+              <ul class="p-announcements__content-list">
+                <li>
+                  <a href="" class="p-announcements__card1 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card2 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card3 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card4 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card5 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card6 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card7 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card8 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card9 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card10 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="p-announcements__pagination c-pagination">
+                <li><a href=""><</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">></a></li>
+              </ul>
+            </div>
+            </div>
+          <div
+            id="category1"
+            class="p-announcements__tab-content p-announcements__sp"
+          >
+            <div class="p-announcements__tab-content-wrapper">
+              <ul class="p-announcements__content-list">
+                <li>
+                  <a href="" class="p-announcements__card1 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card2 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card3 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card4 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card5 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card6 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card7 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card8 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card9 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card10 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="p-announcements__pagination c-pagination">
+                <li><a href=""><</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">></a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="category2"
+            class="p-announcements__tab-content p-announcements__sp"
+          >
+            <div class="p-announcements__tab-content-wrapper">
+              <ul class="p-announcements__content-list">
+                <li>
+                  <a href="" class="p-announcements__card1 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card2 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card3 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card4 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card5 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card6 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card7 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card8 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card9 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__card10 c-card">
+                    <div class="p-announcements__card-content">
+                      <div class="p-announcements__card-content-wrapper">
+                        <div class="p-announcements__card-date">
+                          <p>YYYY.MM.DD</p>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-announcements__card-category">
+                      <p>カテゴリ</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="p-announcements__pagination c-pagination">
+                <li><a href=""><</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+          <!-- PC -->
+          <div
+            id="all"
+            class="p-announcements__tab-content p-announcements__tab-content-pc"
+          >
+            <div class="p-announcements__tab-content-wrapper">
+              <ul class="p-announcements__content-list">
+                <li>
+                  <a href="" class="p-announcements__tab-content-pc">
+                    <div class="p-announcements__card-content-wrapper">
+                      <div class="p-announcements__card1-pc">
+                        <img src="/images/work-bokujo01.png" alt="" />
+                      </div>
+                      <div class="p-announcements__card-content">
+                        <div class="p-announcements__card-date-category">
+                          <div class="p-announcements__card-date">
+                            <p>YYYY.MM.DD</p>
+                          </div>
+                          <div class="p-announcements__card-category">
+                            <p>カテゴリ</p>
+                          </div>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                        <div class="p-announcements__card-text">
+                          <p>
+                            本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__tab-content-pc">
+                    <div class="p-announcements__card-content-wrapper">
+                      <div
+                        class="p-announcements__card1-pc p-announcements__tab-content-pc"
+                      >
+                        <img src="/images/work-bokujo02.png" alt="" />
+                      </div>
+                      <div class="p-announcements__card-content">
+                        <div class="p-announcements__card-date-category">
+                          <div class="p-announcements__card-date">
+                            <p>YYYY.MM.DD</p>
+                          </div>
+                          <div class="p-announcements__card-category">
+                            <p>カテゴリ</p>
+                          </div>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                        <div class="p-announcements__card-text">
+                          <p>
+                            本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__tab-content-pc">
+                    <div class="p-announcements__card-content-wrapper">
+                      <div
+                        class="p-announcements__card1-pc p-announcements__tab-content-pc"
+                      >
+                        <img src="/images/work-bokujo03.png" alt="" />
+                      </div>
+                      <div class="p-announcements__card-content">
+                        <div class="p-announcements__card-date-category">
+                          <div class="p-announcements__card-date">
+                            <p>YYYY.MM.DD</p>
+                          </div>
+                          <div class="p-announcements__card-category">
+                            <p>カテゴリ</p>
+                          </div>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                        <div class="p-announcements__card-text">
+                          <p>
+                            本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__tab-content-pc">
+                    <div class="p-announcements__card-content-wrapper">
+                      <div
+                        class="p-announcements__card1-pc p-announcements__tab-content-pc"
+                      >
+                        <img src="/images/work-bokujo04.png" alt="" />
+                      </div>
+                      <div class="p-announcements__card-content">
+                        <div class="p-announcements__card-date-category">
+                          <div class="p-announcements__card-date">
+                            <p>YYYY.MM.DD</p>
+                          </div>
+                          <div class="p-announcements__card-category">
+                            <p>カテゴリ</p>
+                          </div>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                        <div class="p-announcements__card-text">
+                          <p>
+                            本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__tab-content-pc">
+                    <div class="p-announcements__card-content-wrapper">
+                      <div
+                        class="p-announcements__card1-pc p-announcements__tab-content-pc"
+                      >
+                        <img src="/images/work-ec01.png" alt="" />
+                      </div>
+                      <div class="p-announcements__card-content">
+                        <div class="p-announcements__card-date-category">
+                          <div class="p-announcements__card-date">
+                            <p>YYYY.MM.DD</p>
+                          </div>
+                          <div class="p-announcements__card-category">
+                            <p>カテゴリ</p>
+                          </div>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                        <div class="p-announcements__card-text">
+                          <p>
+                            本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__tab-content-pc">
+                    <div class="p-announcements__card-content-wrapper">
+                      <div
+                        class="p-announcements__card1-pc p-announcements__tab-content-pc"
+                      >
+                        <img src="/images/work-ec02.png" alt="" />
+                      </div>
+                      <div class="p-announcements__card-content">
+                        <div class="p-announcements__card-date-category">
+                          <div class="p-announcements__card-date">
+                            <p>YYYY.MM.DD</p>
+                          </div>
+                          <div class="p-announcements__card-category">
+                            <p>カテゴリ</p>
+                          </div>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                        <div class="p-announcements__card-text">
+                          <p>
+                            本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__tab-content-pc">
+                    <div class="p-announcements__card-content-wrapper">
+                      <div
+                        class="p-announcements__card1-pc p-announcements__tab-content-pc"
+                      >
+                        <img src="/images/work-ec03.png" alt="" />
+                      </div>
+                      <div class="p-announcements__card-content">
+                        <div class="p-announcements__card-date-category">
+                          <div class="p-announcements__card-date">
+                            <p>YYYY.MM.DD</p>
+                          </div>
+                          <div class="p-announcements__card-category">
+                            <p>カテゴリ</p>
+                          </div>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                        <div class="p-announcements__card-text">
+                          <p>
+                            本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__tab-content-pc">
+                    <div class="p-announcements__card-content-wrapper">
+                      <div
+                        class="p-announcements__card1-pc p-announcements__tab-content-pc"
+                      >
+                        <img src="/images/work-ec04.png" alt="" />
+                      </div>
+                      <div class="p-announcements__card-content">
+                        <div class="p-announcements__card-date-category">
+                          <div class="p-announcements__card-date">
+                            <p>YYYY.MM.DD</p>
+                          </div>
+                          <div class="p-announcements__card-category">
+                            <p>カテゴリ</p>
+                          </div>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                        <div class="p-announcements__card-text">
+                          <p>
+                            本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__tab-content-pc">
+                    <div class="p-announcements__card-content-wrapper">
+                      <div
+                        class="p-announcements__card1-pc p-announcements__tab-content-pc"
+                      >
+                        <img src="/images/work-nouen01.png" alt="" />
+                      </div>
+                      <div class="p-announcements__card-content">
+                        <div class="p-announcements__card-date-category">
+                          <div class="p-announcements__card-date">
+                            <p>YYYY.MM.DD</p>
+                          </div>
+                          <div class="p-announcements__card-category">
+                            <p>カテゴリ</p>
+                          </div>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                        <div class="p-announcements__card-text">
+                          <p>
+                            本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="p-announcements__tab-content-pc">
+                    <div class="p-announcements__card-content-wrapper">
+                      <div
+                        class="p-announcements__card1-pc p-announcements__tab-content-pc"
+                      >
+                        <img src="/images/work-nouen02.png" alt="" />
+                      </div>
+                      <div class="p-announcements__card-content">
+                        <div class="p-announcements__card-date-category">
+                          <div class="p-announcements__card-date">
+                            <p>YYYY.MM.DD</p>
+                          </div>
+                          <div class="p-announcements__card-category">
+                            <p>カテゴリ</p>
+                          </div>
+                        </div>
+                        <div class="p-announcements__card-title">
+                          <p>
+                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                          </p>
+                        </div>
+                        <div class="p-announcements__card-text">
+                          <p>
+                            本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。本文の抜粋が入ります。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="p-announcements__pagination c-pagination">
+                <li><a href=""><</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-contact">
+        <div class="p-contact__wrapper">
+          <h2 class="p-contact__heading c-title">お問い合わせ</h2>
+          <p class="p-contact__description c-description">
+            お仕事のご相談、農園体験、牧場の見学、その他ご質問<br />
+            お気軽にお問い合わせください。
+          </p>
+          <a href="">
+            <div class="p-contact__button c-view-more">
+              <p>お問い合わせ</p>
+            </div>
+          </a>
+          <div class="p-contact__number">
+            <p>
+              問い合わせ電話: <br class="u-pc-br-hidden" /><span
+                class="p-contact__number--big"
+                >123-4567-8910</span
+              >
+            </p>
+          </div>
+          <div class="p-contact__hours">
+            <p>
+              【受付時間】<br class="u-pc-br-hidden" />10:00 ~
+              18:00（土日祝を除く）
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="l-footer">
+        <div class="l-footer__wrapper">
+          <div class="l-footer__inner">
+            <div class="l-footer__left">
+              <div class="l-footer__logo">
+                <img src="./images/logo.svg" alt="自然の恵み農園" />
+              </div>
+
+              <div class="l-footer__address">
+                <p>〒123-4567</p>
+                <p>千葉県〇〇市××町1丁目23-45</p>
+              </div>
+              <div class="l-footer__contact">
+                <p>TEL:123-4567-8910</p>
+                <p>FAX:12-345-6789</p>
+              </div>
+            </div>
+            <div class="l-footer__right">
+              <nav class="l-footer__nav">
+                <ul class="l-footer__nav-list">
+                  <li class="l-footer__nav-item">
+                    <a href="#about" class="l-footer__nav-link">ホーム</a>
+                  </li>
+                  <li class="l-footer__nav-item">
+                    <a href="#about" class="l-footer__nav-link"
+                      >私たちについて</a
+                    >
+                  </li>
+                  <li class="l-footer__nav-item">
+                    <a href="#service" class="l-footer__nav-link">活動紹介</a>
+                  </li>
+                  <li class="l-footer__nav-item">
+                    <a href="#faq" class="l-footer__nav-link">よくあるご質問</a>
+                  </li>
+                  <li class="l-footer__nav-item">
+                    <a href="#news" class="l-footer__nav-link">アクセス</a>
+                  </li>
+                  <li class="l-footer__nav-item">
+                    <a href="#access" class="l-footer__nav-link">お知らせ</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <a href="">
+            <div class="l-footer__x-button l-footer__button">
+              <img src="./images/x-icon.svg" alt="" />
+            </div>
+          </a>
+          <a href="">
+            <div class="l-footer__instagram-button l-footer__button">
+              <img src="./images/insta-icon.svg" alt="" />
+            </div>
+          </a>
+          <a href="">
+            <div class="l-footer__youtube-button l-footer__button">
+              <img src="./images/youtube-icon.svg" alt="" />
+            </div>
+          </a>
+
+          <div class="l-footer__copy">
+            <p>©︎ shizen-no-megumi-nouen Inc .2023</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- スライドショーを実現するためのJavaScriptライブラリ -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

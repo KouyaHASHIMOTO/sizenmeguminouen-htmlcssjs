@@ -1,0 +1,23 @@
+@use "../global/forward" as *;
+
+
+ 
+ .c-breadcrumbs ol {
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.c-breadcrumbs-arrow{
+  content: '';
+  display: inline-block;
+  margin: 6px 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid $main-color; /*右矢印*/
+  border-bottom: 1px solid $main-color; /*下線*/
+  transform: rotate(-45deg); /*右下に45度回転*/
+}
+
+

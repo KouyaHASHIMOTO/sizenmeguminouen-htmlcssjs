@@ -52,7 +52,6 @@
 }
 
 .p-about__img {
-  visibility: hidden;
   img:nth-child(1) {
     position: absolute;
     height: 0;
@@ -100,42 +99,55 @@
 }
 
 .p-about__img.is-active {
-  visibility: visible;
   img:nth-child(1) {
+    opacity: 0;
     position: absolute;
     width: px-to-vw(63, 375);
     height: auto;
     animation: 2s fadeup1 ease forwards;
+    animation-delay: 1s;
+
 
     @include mq("pc") {
       width: px-to-vw(200);
     }
   }
   img:nth-child(2) {
+    opacity: 0;
+
     position: absolute;
     width: px-to-vw(57, 375);
     height: auto;
     animation: 2s fadeup2 ease forwards;
+    animation-delay: 2s;
 
     @include mq("pc") {
       width: px-to-vw(181);
     }
   }
   img:nth-child(3) {
+    opacity: 0;
+
     position: absolute;
     width: px-to-vw(86, 375);
     height: auto;
     animation: 2s fadeup3 ease forwards;
+    animation-delay: 3s;
+
 
     @include mq("pc") {
       width: px-to-vw(200);
     }
   }
   img:nth-child(4) {
+    opacity: 0;
+
     position: absolute;
     width: px-to-vw(92, 375);
     height: auto;
     animation: 2s fadeup4 ease forwards;
+    animation-delay: 4s;
+
 
     @include mq("pc") {
       width: px-to-vw(235);
@@ -144,7 +156,7 @@
 }
 @keyframes fadeup1 {
   0% {
-    opacity: 0;
+    
     transform: translateX(-50px);
   }
 
